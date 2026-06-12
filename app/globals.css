@@ -1,0 +1,527 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   «Тихий горизонт» — frozen design tokens
+   (SCREEN_SYSTEM_MASTER §2–§5 + PATCH_V1 §1). Semantic layer
+   switches between light and dark; components never use raw hex.
+   ============================================================ */
+:root {
+  /* primitive pine palette */
+  --color-pine-50: #eef3f1;
+  --color-pine-100: #dfeae6;
+  --color-pine-300: #a9c9c0;
+  --color-pine-700: #2e6b5e;
+  --color-pine-900: #10231f;
+  --color-sand-100: #f1e9df;
+
+  /* semantic — light theme (default) */
+  --color-bg: #f8f6f1;
+  --color-bg-alt: #eef3f1;
+  --color-surface: #fcfbf8;
+  --color-surface-strong: #ffffff;
+  --color-surface-warm: #f1e9df;
+
+  --color-brand: #2e6b5e;
+  --color-brand-hover: #255849;
+  --color-brand-soft: #a9c9c0;
+  --color-clay: #b5704a;
+
+  --color-text-primary: #14322d;
+  --color-text-secondary: #4d635d;
+  --color-text-muted: #76877f;
+
+  --color-border: #e3e0d6;
+  --color-focus-ring: rgba(169, 201, 192, 0.6);
+  --color-success: #3d7a5c;
+  --color-error: #b05a4e;
+
+  /* signature warm light field */
+  --field-core: var(--color-sand-100);
+  --field-mid: var(--color-pine-50);
+  --field-edge: var(--color-bg);
+
+  /* fonts (bound by next/font in layout) */
+  --font-serif: var(--font-lora), Georgia, serif;
+  --font-sans: var(--font-onest), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+
+  /* motion tokens */
+  --motion-micro: 180ms;
+  --motion-enter: 400ms;
+  --motion-section: 650ms;
+  --ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* layered z-index scale */
+  --z-sticky-bar: 40;
+  --z-header: 50;
+  --z-overlay: 100;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #10231f;
+    --color-bg-alt: #122723;
+    --color-surface: #16302b;
+    --color-surface-strong: #1d3a34;
+    --color-surface-warm: #1f3d37;
+
+    --color-brand: #3e8c7a;
+    --color-brand-hover: #4fa08c;
+    --color-brand-soft: #a9c9c0;
+    --color-clay: #cf8a64;
+
+    --color-text-primary: #ecefea;
+    --color-text-secondary: #a9b4af;
+    --color-text-muted: #7e8b86;
+
+    --color-border: #2a3e39;
+    --color-focus-ring: rgba(169, 201, 192, 0.6);
+    --color-success: #5fa07e;
+    --color-error: #c77468;
+
+    --color-pine-100: #1f3d37;
+    --color-pine-700: #a9c9c0;
+
+    --field-core: #173a33;
+    --field-mid: #142e29;
+    --field-edge: #10231f;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-text-primary);
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-brand-soft);
+    color: var(--color-pine-900);
+  }
+
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-focus-ring);
+    border-radius: 6px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  /* ---- typography scale (frozen §3.1) ---- */
+  .type-display {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: 0.005em;
+  }
+  .type-h1 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 2.875rem);
+    line-height: 1.1;
+  }
+  .type-h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(1.625rem, 3vw, 2.125rem);
+    line-height: 1.15;
+  }
+  .type-h3 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: clamp(1.375rem, 2vw, 1.5rem);
+    line-height: 1.3;
+  }
+  .type-h4 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+  .type-lead {
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+  }
+  .type-body {
+    font-size: 1.125rem;
+    line-height: 1.65;
+  }
+  .type-body-sm {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .type-caption {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+  }
+  .type-micro {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+  }
+  .type-eyebrow {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-brand);
+  }
+
+  .container-page {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+  @media (min-width: 768px) {
+    .container-page {
+      padding-inline: 48px;
+    }
+  }
+
+  /* ---- signature Layer A: horizon hairline ---- */
+  .horizon-line {
+    display: block;
+    height: 1.5px;
+    width: 64px;
+    background: var(--color-brand-soft);
+    border: none;
+    transform-origin: left center;
+    animation: horizon-draw var(--motion-enter) var(--ease-calm) both;
+  }
+
+  /* ---- signature Layer B: warm light field ---- */
+  .warm-field {
+    position: relative;
+    isolation: isolate;
+  }
+  .warm-field::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+      120% 90% at 22% 18%,
+      var(--field-core) 0%,
+      var(--field-mid) 42%,
+      var(--field-edge) 78%
+    );
+    animation: field-drift 28s ease-in-out infinite alternate;
+  }
+}
+
+@layer utilities {
+  /* motion signature "Оседание" (settle) + draw-in, applied by Reveal */
+  .settle {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  .settle.is-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity var(--motion-enter) var(--ease-calm),
+      transform var(--motion-enter) var(--ease-calm);
+  }
+}
+
+@keyframes horizon-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes field-drift {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 6% 4%;
+  }
+}
+
+/* ---- reduced motion: opacity only, fields & lines static ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .warm-field::before {
+    animation: none !important;
+  }
+  .horizon-line {
+    animation: none !important;
+  }
+  .settle {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ============================================================
+   THEME V2 — Donor brand DNA (blue + beige, Manrope, ring, wave)
+   Scoped to .theme-v2 so it never touches the existing pine pages.
+   Follows PRO_SPOKOYSTVIE_VISUAL_SYSTEM_MASTER_V1.md §3.
+   ============================================================ */
+.theme-v2 {
+  --v2-blue: #385060;
+  --v2-blue-deep: #2c4251;
+  --v2-blue-2: #2e5272;
+  --v2-text: #3d4a56;
+  --v2-text-mid: #7e98ad;
+  --v2-border: #a9bfd1;
+  --v2-bg: #ffffff;
+  --v2-bg-alt: #f8f8f8;
+  --v2-surface: #ffffff;
+  --v2-blue-pale: #e6f3fe;
+  --v2-blue-pale-2: #f3faff;
+  --v2-wave: #cde7fe;
+  --v2-beige: #7d644d;
+  --v2-beige-light: #d8cdbb;
+  --v2-bright: #4db7ff;
+  --v2-error: #b05a4e;
+
+  --v2-shadow-sm: 0 2px 8px rgba(20, 50, 46, 0.05);
+  --v2-shadow-md: 0 8px 24px rgba(20, 50, 46, 0.07);
+  --v2-shadow-lg: 0 16px 48px rgba(20, 50, 46, 0.1);
+
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  background-color: var(--v2-bg);
+  color: var(--v2-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-v2 {
+    --v2-blue: #6f9fbe;
+    --v2-blue-deep: #e7eef3;
+    --v2-blue-2: #8fb4cc;
+    --v2-text: #e7eef3;
+    --v2-text-mid: #9fb2c0;
+    --v2-border: #2e4250;
+    --v2-bg: #15222b;
+    --v2-bg-alt: #1a2a34;
+    --v2-surface: #1c2d38;
+    --v2-blue-pale: #1a2f3c;
+    --v2-blue-pale-2: #16262f;
+    --v2-wave: #244154;
+    --v2-beige: #c7b79e;
+    --v2-beige-light: #3a4a44;
+  }
+}
+
+@layer components {
+  .v2-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+  @media (min-width: 768px) {
+    .v2-container { padding-inline: 48px; }
+  }
+
+  .v2-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--v2-blue);
+  }
+  .v2-h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: var(--v2-blue-deep);
+    text-wrap: balance;
+  }
+  .v2-lead {
+    font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+    line-height: 1.6;
+    color: var(--v2-text);
+    max-width: 60ch;
+  }
+
+  /* signature: short blue hairline / wave baseline */
+  .v2-hairline {
+    display: block;
+    height: 2px;
+    width: 64px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--v2-blue) 0%, var(--v2-wave) 100%);
+  }
+
+  .v2-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 9999px;
+    border: 1px solid var(--v2-border);
+    background: var(--v2-surface);
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--v2-text);
+  }
+  .v2-chip-topic {
+    border-color: transparent;
+    background: var(--v2-blue-pale);
+    color: var(--v2-blue);
+  }
+
+  /* premium trust chip: surface + hairline + soft elevation + blue icon */
+  .v2-trustchip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 9999px;
+    border: 1px solid var(--v2-border);
+    background: var(--v2-surface);
+    padding: 8px 15px 8px 12px;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--v2-blue-deep);
+    box-shadow: var(--v2-shadow-sm);
+  }
+  .v2-trustchip svg {
+    flex: none;
+    color: var(--v2-blue);
+  }
+
+  .v2-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 52px;
+    padding-inline: 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 180ms var(--ease-calm), box-shadow 180ms var(--ease-calm),
+      background-color 180ms var(--ease-calm);
+  }
+  .v2-btn-primary { background: var(--v2-blue); color: #fff; box-shadow: var(--v2-shadow-sm); }
+  .v2-btn-primary:hover { transform: translateY(-2px); box-shadow: var(--v2-shadow-md); }
+  .v2-btn-primary:active { transform: scale(0.98); }
+  .v2-btn-ghost { border: 1px solid var(--v2-border); color: var(--v2-blue-deep); }
+  .v2-btn-ghost:hover { transform: translateY(-1px); background: var(--v2-bg-alt); }
+
+  .v2-card {
+    border-radius: 16px;
+    background: var(--v2-surface);
+    border: 1px solid var(--v2-border);
+    box-shadow: var(--v2-shadow-md);
+  }
+}
+
+/* ============================================================
+   THEME V2 — MOTION RESTORE (Hero V4). Subtle, premium, reduced-motion safe.
+   Plays once on load (hero is above the fold). transform/opacity/clip only.
+   ============================================================ */
+@media (prefers-reduced-motion: no-preference) {
+  .theme-v2 .v4-draw {
+    animation: v4-draw 620ms var(--ease-calm) 220ms backwards;
+    transform-origin: left center;
+  }
+  .theme-v2 .v4-mask {
+    animation: v4-mask 760ms var(--ease-calm) 120ms backwards;
+  }
+  .theme-v2 .v4-rise {
+    animation: v4-rise 560ms var(--ease-calm) both;
+  }
+  .theme-v2 .v4-rise-2 { animation-delay: 110ms; }
+  .theme-v2 .v4-rise-3 { animation-delay: 200ms; }
+  .theme-v2 .v4-drift {
+    animation: v4-drift 26s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+}
+@keyframes v4-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes v4-mask {
+  from { clip-path: inset(0 0 100% 0); transform: scale(1.05); }
+  to   { clip-path: inset(0 0 0 0);   transform: scale(1); }
+}
+@keyframes v4-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes v4-drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(2.5%, -1.5%, 0); } }
+
+/* depth on hover (desktop) */
+.theme-v2 .v4-depth { transition: transform 200ms var(--ease-calm), box-shadow 200ms var(--ease-calm); }
+@media (hover: hover) {
+  .theme-v2 .v4-depth:hover { transform: translateY(-2px); box-shadow: var(--v2-shadow-lg); }
+}
+
+/* small real-doctor avatar (social proof) */
+.theme-v2 .v4-avatar {
+  position: relative; height: 40px; width: 40px; flex: none;
+  border-radius: 9999px; overflow: hidden;
+  border: 2px solid var(--v2-surface);
+  box-shadow: var(--v2-shadow-sm);
+}
+
+/* ===== THEME V2 — section primitives (home-v1) ===== */
+.theme-v2 .v2-section { padding-block: 56px; }
+@media (min-width:1024px){ .theme-v2 .v2-section { padding-block: 104px; } }
+.theme-v2 .v2-h2 {
+  font-weight: 700; font-size: clamp(1.75rem, 3.2vw, 2.25rem);
+  line-height: 1.14; letter-spacing: -0.01em; color: var(--v2-blue-deep); text-wrap: balance;
+}
+.theme-v2 .v2-h3 { font-weight: 600; font-size: clamp(1.25rem,1.6vw,1.5rem); line-height:1.25; color: var(--v2-blue-deep); }
+.theme-v2 .v2-h4 { font-weight: 600; font-size: 1.125rem; line-height: 1.3; color: var(--v2-blue-deep); }
+.theme-v2 .v2-body { font-size: 1.0625rem; line-height: 1.6; color: var(--v2-text); }
+.theme-v2 .v2-muted { color: var(--v2-text-mid); }
+.theme-v2 .v2-eyebrow2 { font-size:13px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color: var(--v2-blue); }
+.theme-v2 .v2-tile {
+  border-radius: 18px; background: var(--v2-surface); border: 1px solid var(--v2-border);
+  box-shadow: var(--v2-shadow-sm); transition: transform 200ms var(--ease-calm), box-shadow 200ms var(--ease-calm);
+}
+@media (hover:hover){ .theme-v2 a.v2-tile:hover, .theme-v2 .v2-tile.is-link:hover { transform: translateY(-3px); box-shadow: var(--v2-shadow-md); } }
+.theme-v2 .v2-tile-tint { background: var(--v2-blue-pale-2); }
+.theme-v2 .v2-input {
+  min-height: 52px; border-radius: 12px; border: 1px solid var(--v2-border);
+  background: var(--v2-bg); padding: 0 16px; color: var(--v2-blue-deep); width: 100%; font-size: 1rem;
+}
+.theme-v2 .v2-input:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--v2-wave); }
+.theme-v2 .v2-wave-divider { color: var(--v2-wave); line-height: 0; }

@@ -1,0 +1,95 @@
+{
+  "$schema": "internal://pro-spokoystvie/donor-assets-v2",
+  "project": "PRO Спокойствие 2.0 — donor brand DNA extraction",
+  "generated": "2026-06-09",
+  "donorSite": "https://pro-spokoystvie.ru/",
+  "platform": "Tilda (project14141449)",
+  "cdn": "static.tildacdn.com",
+  "note": "Real brand DNA extracted from the live donor. Old assets untouched. No stock/AI. Preserve сине-бежевая palette, double-ring symbol, wave plasticity, Manrope.",
+  "brandDNA": {
+    "logo": {
+      "symbol": "interlocking double-ring (infinity / heart-wave): blue ring + beige ring overlapping",
+      "meaning": "continuity of care, connection, calm; warmth (beige) beside medical calm (blue)",
+      "wordmark": "ПРО (bold blue) СПОКОЙСТВИЕ (lighter blue) + Медицинский центр",
+      "files": {
+        "primary": "/donor-assets-v2/logo/og-image.png",
+        "white": "/donor-assets-v2/logo/logo-candidate-a.png",
+        "favicon": "/donor-assets-v2/logo/favicon.png"
+      }
+    },
+    "colors": {
+      "brandBlue": "#385060",
+      "brandBlueDeep": ["#2C4251", "#2E5272", "#325C80", "#354A59"],
+      "textSlate": "#3D4A56",
+      "blueMid": ["#7E98AD", "#6F899A", "#60798A", "#89ABC3", "#94AABB"],
+      "blueSoft": ["#A9BFD1", "#C1CED7"],
+      "bluePale": ["#F3FAFF", "#EFF8FF", "#E6F3FE", "#E4F3FF", "#E4F0F9"],
+      "waveBlue": "#CDE7FE",
+      "blueBright": "#4DB7FF",
+      "beige": "#7D644D",
+      "beigeLight": "#D8CDBB",
+      "bg": ["#FFFFFF", "#F8F8F8"],
+      "ink": "#000000"
+    },
+    "typography": {
+      "primary": "Manrope",
+      "weights": [300, 400, 500, 600, 700],
+      "secondary": "Noto Sans (cyrillic)",
+      "fallback": "Arial"
+    },
+    "signatureMotif": "wave plasticity + double ring (use as section backgrounds and dividers)",
+    "characterToPreserve": ["сине-бежевая палитра", "двойное кольцо/бесконечность", "волновая пластика", "Manrope", "мягкий медицинский характер", "узнаваемость"]
+  },
+  "assets": {
+    "logo": [
+      { "file": "logo/og-image.png", "src": "https://static.tildacdn.com/tild6562-3564-4133-a434-333037356630/___.png", "what": "full logo (double-ring + wordmark)", "dims": "1345x1273", "use": true, "where": "header (light), og:image, branding base" },
+      { "file": "logo/favicon.png", "src": "https://static.tildacdn.com/tild6336-6432-4965-a234-333837333939/__.png", "what": "logo used as favicon", "dims": "1345x1273", "use": true, "where": "favicon (crop symbol)" },
+      { "file": "logo/logo-candidate-a.png", "src": "https://static.tildacdn.com/tild6632-3466-4134-b861-373636373465/__.png", "what": "white logo version", "dims": "505x139", "use": true, "where": "header on dark / footer" },
+      { "file": "logo/logo-candidate-b.png", "src": "https://static.tildacdn.com/tild3835-6537-4930-a332-333765626665/__.png", "what": "logo variant (RGBA)", "dims": "741x394", "use": "verify", "where": "tbd" }
+    ],
+    "graphics": [
+      { "file": "graphics/ribbon-1.svg", "src": "https://static.tildacdn.com/tild3031-3861-4563-b864-646666616535/svg_1755773382591.svg", "what": "large wave ribbon (stroke #CDE7FE)", "use": true, "where": "hero/section background" },
+      { "file": "graphics/ribbon-2.svg", "src": "https://static.tildacdn.com/tild6233-3634-4835-a165-383866366237/svg_1755773393284.svg", "what": "wave ribbon (dup)", "use": true, "where": "section divider" },
+      { "file": "graphics/wave-1.svg", "src": "https://static.tildacdn.com/tild3263-6439-4638-b930-336564316166/1__.svg", "what": "arc wave (white opacity .26)", "use": true, "where": "blue section bg" },
+      { "file": "graphics/wave-2-large.svg", "src": "https://static.tildacdn.com/tild3563-3934-4666-b334-613563393163/_.svg", "what": "large arc wave", "use": true, "where": "hero bg" },
+      { "file": "graphics/wave-3.svg", "src": "https://static.tildacdn.com/tild3834-3632-4266-a565-633933666336/3__.svg", "what": "arc wave", "use": true, "where": "accent bg" },
+      { "file": "graphics/transparent-shape.png", "src": "https://static.tildacdn.com/tild6536-3831-4732-b633-363132313362/transparent-Photoroo.png", "what": "transparent shape/mockup", "use": "verify" },
+      { "file": "graphics/frame-57156.png", "src": "https://static.tildacdn.com/tild3166-6662-4263-a162-366265306561/Frame_57156.png", "what": "frame/composition", "use": "verify" },
+      { "file": "graphics/frame-2131328551.png", "src": "https://static.tildacdn.com/tild3237-3736-4265-a330-383537393665/Frame_2131328551.png", "what": "frame/mockup", "use": "verify" },
+      { "file": "graphics/frame-2131328547.png", "src": "https://static.tildacdn.com/tild6236-3733-4435-a536-663265366463/Frame_2131328547.png", "what": "frame/mockup", "use": "verify" }
+    ],
+    "icons": [
+      { "file": "icons/icons8-goal.png", "src": "https://static.tildacdn.com/tild3031-6531-4564-b838-363762336364/icons8-goal-96.png", "what": "icons8 goal", "use": false, "note": "replace with authorial icon-set; keep as meaning reference" },
+      { "file": "icons/icons8-member.png", "src": "https://static.tildacdn.com/tild3837-3236-4332-a635-333430386133/icons8-member-96.png", "what": "icons8 member", "use": false, "note": "replace" },
+      { "file": "icons/icons8-heart.png", "src": "https://static.tildacdn.com/tild6261-6632-4538-b765-356435643337/icons8-heart-with-pu.png", "what": "icons8 heart", "use": false, "note": "replace" }
+    ],
+    "doctors": [
+      { "file": "doctors/romanovsky.jpg", "doctor": "Романовский В.О.", "role": "chief", "quality": "7/10", "use": "temp", "warning": "white coat — temp, reshoot priority #1", "where": "founder/chief block" },
+      { "file": "doctors/dvornikova.jpg", "doctor": "Дворникова Е.А.", "quality": "9/10", "use": true, "where": "featured doctor (homepage)" },
+      { "file": "doctors/selkina.jpg", "doctor": "Селькина Е.О.", "quality": "8/10", "use": true, "where": "catalogue / secondary" }
+    ],
+    "clinic": [
+      { "file": "clinic/interior-1.jpg", "what": "real clinic interior", "quality": "7/10", "use": "temp", "where": "hero/trust", "note": "only real interior frame; replace after photoshoot" }
+    ],
+    "documents": [
+      { "file": "documents/license.jpg", "what": "license scan + QR №Л041-01021-66/04064884", "trust": "10/10", "use": true },
+      { "file": "documents/rules-priem.jpg", "what": "admission rules", "trust": "8/10", "use": true },
+      { "file": "documents/grafik-priem.jpg", "what": "reception schedule", "trust": "8/10", "use": true },
+      { "file": "documents/control-organy.jpg", "what": "regulators", "trust": "9/10", "use": true }
+    ],
+    "unknown": [
+      { "file": "unknown/max-logo-2025.png", "src": "https://static.tildacdn.com/tild6633-3864-4438-b364-343965663334/Max_logo_2025.png", "what": "'Max' logo (third-party?)", "use": false, "note": "flagged — do not use without confirmation" }
+    ]
+  },
+  "forbidden": [
+    "stock photos (Unsplash: ryan-moreno, mathieu-stern, roman-kraft, sebastian-dumitru, 18920)",
+    "Ivanova photo",
+    "docs/current-site-audit/assets/unknown/** (88 unverified)",
+    "icons8 set as-is (replace with authorial icons)",
+    "any AI-generated imagery",
+    "unknown/max-logo-2025.png"
+  ],
+  "tildaAnimationsToDrop": ["parallax scroll", "parallax mouse", "2.3s chained fly-ins"],
+  "tildaAnimationsToKeep": ["fadeinup appear (as calm scroll-reveal)", "load opacity transition"],
+  "verdict": "DONOR_BRAND_DNA_V2_READY"
+}

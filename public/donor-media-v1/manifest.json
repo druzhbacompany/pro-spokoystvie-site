@@ -1,0 +1,3872 @@
+{
+ "generated": "2026-06-12",
+ "source": "pro-spokoystvie.ru (live + crawl + raw-assets.json)",
+ "total": 184,
+ "downloaded": 183,
+ "assets": [
+  {
+   "file": "/donor-media-v1/graphics/a_bubbles_talk_conversation_dialog.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1067,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/bubbles_talk_conversation_dialog.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov"
+   ],
+   "alt": [
+    "//static.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/doctor_professions.svg\"> Выбор специалиста Вы&nbsp;можете "
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/a_bulb_light_idea.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1251,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/bulb_light_idea.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov"
+   ],
+   "alt": [
+    "tatic.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/bubbles_talk_conversation_dialog.svg\"> Запишитесь на консульт"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/a_doctor_professions.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1061,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/doctor_professions.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov"
+   ],
+   "alt": [
+    "und-size: 60%;\" itemscope itemtype=\"http://schema.org/ImageObject\"> Свяжитесь с нами Оставьте заявку на&nbsp;сайте, или "
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/a_phone_contact_call.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 980,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/lib/icons/tilda/-/paint/385060--1-0-100/phone_contact_call.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov"
+   ],
+   "alt": [
+    "_text_175888024333825350'> Важно: один-два симптома ещё не&nbsp;означают зависимость, но&nbsp;если они систематически по"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3031-386_svg_1755773382591.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 18381,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3031-3861-4563-b864-646666616535/svg_1755773382591.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "e=\"41\" data-field-height-res-480-value=\"81\" data-field-top-res-640-value=\"9\" data-field-left-res-640-value=\"32\" data-fie"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3031-653_icons8-goal-96.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 5960,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3031-6531-4564-b838-363762336364/icons8-goal-96.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "\" data-field-height-res-640-value=\"32\" data-field-width-res-640-value=\"32\" data-field-top-res-960-value=\"867\" data-field"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3036-663_Frame_2131328710.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 254785,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3036-6630-4361-b731-313239393837/Frame_2131328710.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3037-353_642a97bb-7bf4-489e-8.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 284714,
+   "width": 960,
+   "height": 1280,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3037-3538-4834-b037-303735306164/642a97bb-7bf4-489e-8.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": "UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/3037-653_diego-ph-SZYreZsJ-fE.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 312250,
+   "width": 1680,
+   "height": 2100,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3037-6536-4835-a330-666435643633/diego-ph-SZYreZsJ-fE.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/uslugi-psihology-help",
+    "https://pro-spokoystvie.ru/uslugi-psihology-help-old"
+   ],
+   "alt": [
+    "and (max-width:959px){#rec2043180231 .tn-elem[data-elem-id=\"1771484412309000001\"]{display:table;height:auto;}}@media scr"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/documents/3038-343_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 607434,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3038-3433-4239-a262-316161353739/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3937-386"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3063-616_Frame_2131328552.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 341959,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3063-6164-4662-a336-633037323963/Frame_2131328552.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie-old"
+   ],
+   "alt": [
+    "indicator_fillmode-cover\" data-original=\"https://static.tildacdn.com/tild6236-3733-4435-a536-663265366463/Frame_21313285"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3065-343_d536eb36-9cc9-4d5e-9.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 191521,
+   "width": 1131,
+   "height": 1600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3065-3438-4361-b132-366439353163/d536eb36-9cc9-4d5e-9.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"6 of 7\" aria-current=\"false\"> <rect class=\"tooltip-horiz"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3066-303_shttefan-viNPa2F7fnw.jpg",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 137376,
+   "width": 1680,
+   "height": 1120,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3066-3038-4761-b639-663836656331/shttefan-viNPa2F7fnw.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/price"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3132-386_IMG_20250714_153426.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 216580,
+   "width": 746,
+   "height": 1056,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3132-3865-4031-a637-616666333633/IMG_20250714_153426.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"7 of 8\" aria-current=\"false\"> <!-- nominify begi"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3134-396_11-13______page-0002.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 783866,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3134-3966-4230-a539-363739383938/11-13______page-0002.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "-value=\"fixed\" data-field-fontsize-value=\"14\" data-field-top-res-360-value=\"821\" data-field-left-res-360-value=\"10\" data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3136-323_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1201860,
+   "width": 1344,
+   "height": 768,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3136-3234-4432-b738-316366373564/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3136-393_photo.png",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 135437,
+   "width": 360,
+   "height": 270,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3136-3939-4135-b132-633339636533/photo.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "ue=\"px\" data-field-widthunits-value=\"px\" data-field-top-res-320-value=\"181\" data-field-left-res-320-value=\"21\" data-fiel"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Главная",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3139-643_a6101f25-c1dc-4bee-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 557444,
+   "width": 1600,
+   "height": 1200,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3139-6431-4932-a230-626535366164/a6101f25-c1dc-4bee-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 6\" aria-current=\"true\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3162-623_11-3_____page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 140227,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3162-6237-4337-b239-356432316637/11-3_____page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "ata-field-width-value=\"361\" data-field-axisy-value=\"top\" data-field-axisx-value=\"left\" data-field-container-value=\"grid\""
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3163-326_Emblem_of_Ministry_o.png",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 666302,
+   "width": 1200,
+   "height": 1315,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3163-3262-4138-b930-306236646437/Emblem_of_Ministry_o.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "its-value=\"px\" data-field-widthunits-value=\"px\" data-field-top-res-320-value=\"813\" data-field-left-res-320-value=\"31\" da"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Главная",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3163-373_icons8-whatsapp-100.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 2203,
+   "width": 100,
+   "height": 100,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3163-3735-4538-b466-396161336533/icons8-whatsapp-100.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [
+    "eld-heightmode-value=\"hug\" data-field-top-res-320-value=\"515\" data-field-left-res-320-value=\"67\" data-field-height-res-3"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3164-353_--------------------.png",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 1028026,
+   "width": 1344,
+   "height": 768,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3164-3532-4335-b336-373861643638/--------------------.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3166-666_Frame_57156.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 113230,
+   "width": 983,
+   "height": 487,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3166-6662-4263-a162-366265306561/Frame_57156.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3234-646_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 668045,
+   "width": 700,
+   "height": 874,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3234-6464-4339-b030-383334313935/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/shisterova-olga-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3235-356_ruki-s-percatkami-i-.jpg",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 194805,
+   "width": 1680,
+   "height": 2520,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3235-3561-4361-b839-323461383666/ruki-s-percatkami-i-.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie-old"
+   ],
+   "alt": [
+    "dia screen and (max-width:479px){#rec1953876621 .tn-elem[data-elem-id=\"1771993184170000001\"]{display:table;top:738px;;le"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3236-326_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 737210,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3236-3265-4333-b336-666566636561/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6562-633"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3236-663_Generate_a_photoreal.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 630796,
+   "width": 1024,
+   "height": 1024,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3236-6635-4835-b761-626464613332/Generate_a_photoreal.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "\"grid\" data-field-top-res-480-value=\"392\" data-field-left-res-480-value=\"130\" data-field-height-res-480-value=\"490\" data"
+   ],
+   "probableType": "unknown",
+   "recommendedUsage": "Не использовать",
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3237-373_Frame_2131328551.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 354576,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3237-3736-4265-a330-383537393665/Frame_2131328551.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "ckground-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;tra"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/3237-633_maartendeckers295105.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 21593,
+   "width": 700,
+   "height": 466,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3237-6333-4737-a466-633933323338/maartendeckers295105.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "or:#ffffff;background-color:#000000;--border-width:0px;border-style:none !important;border-radius:5px;box-shadow:none !i"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3238-383_vrac-krupnym-planom-.jpg",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 112151,
+   "width": 1680,
+   "height": 1260,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3238-3835-4562-a362-633163623030/vrac-krupnym-planom-.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie"
+   ],
+   "alt": [
+    "one;}#rec1363069601 .tn-elem[data-elem-id=\"1758802021861\"] .tn-atom .tn-atom__button-border::after{display:none;}@media "
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/3261-316_mathieu-stern-nDDVQz.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 84287,
+   "width": 1680,
+   "height": 1120,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3261-3165-4138-b865-623531633435/mathieu-stern-nDDVQz.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/graphics/3261-343_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 630883,
+   "width": 700,
+   "height": 784,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3261-3437-4036-a564-626665303139/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-psihology-help"
+   ],
+   "alt": [
+    "#ffffff;background-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !imp"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3263-643_1__.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 742,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3263-6439-4638-b930-336564316166/1__.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "alue=\"20\" data-field-left-res-480-value=\"-1003\" data-field-top-res-640-value=\"516\" data-field-left-res-640-value=\"325\" d"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/3265-333_ryan-moreno-IcAtXrAZ.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 350176,
+   "width": 1680,
+   "height": 2520,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3265-3336-4334-a530-316530313239/ryan-moreno-IcAtXrAZ.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "data-field-axisx-value=\"left\" data-field-container-value=\"grid\" data-field-topunits-value=\"px\" data-field-leftunits-valu"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Главная",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/graphics/3266-323_Slice_1.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1433818,
+   "width": 1680,
+   "height": 928,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3266-3239-4536-b733-356535653638/Slice_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "0 \"> Вы можете нам доверять Свяжитесь с нами удобным способом, чтобы мы могли помочь <form id=\"form2055813481\" name='for"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3266-363_c7b33b6f-0bb2-4d96-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 201129,
+   "width": 1200,
+   "height": 1600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3266-3631-4535-b436-653837623065/c7b33b6f-0bb2-4d96-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3266-393_icons8--96_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1294,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3266-3932-4563-a331-393036356565/icons8--96_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna",
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna",
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna",
+    "https://pro-spokoystvie.ru/shisterova-olga-aleksandrovna"
+   ],
+   "alt": [
+    "\"32\" data-field-height-res-320-value=\"14\" data-field-top-res-480-value=\"623\" data-field-left-res-480-value=\"34\" data-fie"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3331-366_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 161895,
+   "width": 1024,
+   "height": 1019,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3331-3662-4237-b061-386435623938/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "ata-field-top-res-480-value=\"385\" data-field-left-res-480-value=\"12\" data-field-height-res-480-value=\"21\" data-field-top"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3333-373_Frame_1077236166.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 339124,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3333-3733-4966-a233-326438313762/Frame_1077236166.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "\"http://www.w3.org/1999/xlink\"> Записаться на консультацию Пожалуйста, заполните форму, а мы свяжемся с вами для подтвер"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3334-633_11-13______page-0005.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 568771,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3334-6332-4236-a362-346635613238/11-13______page-0005.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6237-663"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3336-326_11-13______page-0008.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 656037,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3336-3265-4934-b739-306539623834/11-13______page-0008.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3935-623"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3336-353_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 659052,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3336-3536-4963-a666-333264616230/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3761-656"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3337-626_11-11_______page-000.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 580988,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3337-6263-4961-a162-333765326464/11-11_______page-000.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3937-616"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3338-326_11-8______page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 377416,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3338-3266-4239-b761-613664386366/11-8______page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "\"620\" data-field-height-value=\"479\" data-field-width-value=\"361\" data-field-axisy-value=\"top\" data-field-axisx-value=\"le"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3361-343_041-01021-66_0406488.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 392039,
+   "width": 1240,
+   "height": 1650,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3361-3439-4537-a535-633464393331/041-01021-66_0406488.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "> <div class='t396__elem tn-elem tn-elem__17534118011767172606376' data-elem-id='1767172606376' data-elem-type='gallery'"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3363-383_8f26b364-953e-40da-9.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 166174,
+   "width": 960,
+   "height": 1280,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3363-3834-4639-b661-636534326165/8f26b364-953e-40da-9.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna"
+   ],
+   "alt": [
+    "148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 2\" aria-current=\"true\"> <!-- nominify b"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3433-316_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 668045,
+   "width": 700,
+   "height": 874,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3433-3162-4833-b865-323661366337/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/shisterova-olga-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3434-656_Frame_2131328549.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 245283,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3434-6565-4536-a539-366637363863/Frame_2131328549.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/tadevosyan-narek-samvelovich"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3437-363_icons8--100_3.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1115,
+   "width": 100,
+   "height": 100,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3437-3638-4739-a330-323237373933/icons8--100_3.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "265\" data-field-height-res-320-value=\"39\" data-field-width-res-320-value=\"39\" data-field-widthmode-res-320-value=\"fixed\""
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3439-333_icons8--100_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 2177,
+   "width": 100,
+   "height": 100,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3439-3333-4338-b363-383263343835/icons8--100_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [
+    "-field-filewidth-value=\"100\" data-field-fileheight-value=\"100\" data-field-heightmode-value=\"hug\" data-field-top-res-320-"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3462-333_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 465,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3462-3333-4065-a539-616638613732/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "mode-value=\"hug\" data-field-top-res-320-value=\"-856\" data-field-left-res-320-value=\"-644\" data-field-height-res-320-valu"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3462-333_IMG_20250714_153313.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 211242,
+   "width": 1069,
+   "height": 755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3462-3333-4837-b163-376463663963/IMG_20250714_153313.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 of 8\" aria-current=\"false\"> <img class=\"t-img t1148"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3463-616_580bad65-1ff7-4599-b.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 461759,
+   "width": 1600,
+   "height": 1200,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3463-6162-4339-b636-646235376266/580bad65-1ff7-4599-b.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "lateX(0);width:16px;animation-timing-function:ease-in-out;}27%{opacity:1;transform:translateX(-20px);width:21px;animatio"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3466-333_Frame_2131328553.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 394077,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3466-3339-4238-a162-663666326336/Frame_2131328553.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie"
+   ],
+   "alt": [
+    "1 t-img-select__indicator_fillmode-cover\" data-original=\"https://static.tildacdn.com/tild3063-6164-4662-a336-63303732396"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3531-383_noroot_1.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 630883,
+   "width": 700,
+   "height": 784,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3531-3834-4737-b433-623138373636/noroot_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3531-623_Mockup_content_2550_.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 4841,
+   "width": 380,
+   "height": 86,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3531-6230-4735-b863-633738633232/Mockup_content_2550_.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "amp;width=100%25&height=260&lang=ru_RU&scroll=true\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M50 100c27.614 0 5"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3533-353_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 614805,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3533-3538-4334-b161-646366323761/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6238-336"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3533-616_2457489-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 117795,
+   "width": 825,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3533-6162-4866-a130-386534366137/2457489-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3533-646_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 668045,
+   "width": 700,
+   "height": 874,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3533-6465-4632-b537-356462623537/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna",
+    "https://pro-spokoystvie.ru/shisterova-olga-aleksandrovna"
+   ],
+   "alt": [
+    "кризисных ситуациях в Екатеринбурге.\" /> <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;6"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3535-636_6f5329f3-9949-40d4-9.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 86852,
+   "width": 768,
+   "height": 1344,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3535-6364-4561-a532-373438636662/6f5329f3-9949-40d4-9.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": "UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3539-366_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 465,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3539-3666-4265-a336-666164663131/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "eld-width-value=\"47\" data-field-axisy-value=\"top\" data-field-axisx-value=\"right\" data-field-container-value=\"grid\" data-"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/clinic/3561-663_IMG_8414_1_1.jpg",
+   "category": "clinic",
+   "downloaded": true,
+   "bytes": 2312211,
+   "width": 1200,
+   "height": 1600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3561-6630-4266-b132-613462306335/IMG_8414_1_1.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "s-value=\"px\" data-field-leftunits-value=\"px\" data-field-heightunits-value=\"px\" data-field-widthunits-value=\"px\" data-fie"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Главная",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3562-613___2025-09-05_225409.png",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 240545,
+   "width": 671,
+   "height": 647,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3562-6137-4533-b063-356635366331/__2025-09-05_225409.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/tadevosyan-narek-samvelovich"
+   ],
+   "alt": [
+    "shape' data-field-top-value=\"94\" data-field-left-value=\"1740\" data-field-height-value=\"100\" data-field-width-value=\"100\""
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3563-393__.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 745,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3563-3934-4666-b334-613563393163/_.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna",
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna",
+    "https://pro-spokoystvie.ru/kapelnicy"
+   ],
+   "alt": [
+    "\" data-field-top-res-320-value=\"-547\" data-field-left-res-320-value=\"1769\" data-field-height-res-320-value=\"700\" data-fi"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3563-636_ChatGPT_Image_2__202.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1457507,
+   "width": 1536,
+   "height": 1024,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3563-6364-4237-a434-346337343432/ChatGPT_Image_2__202.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3563-636_IMG-20250714-WA0076.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 382606,
+   "width": 1200,
+   "height": 873,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3563-6365-4162-a130-653839326266/IMG-20250714-WA0076.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    ";width:21px;animation-timing-function:ease-out;}37%{opacity:1;transform:translateX(-22px);width:16px;animation-timing-fu"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3631-356_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 733798,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3631-3566-4661-a635-653735303966/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3236-326"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3632-326_12-16________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 477817,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3632-3262-4138-b437-383531356332/12-16________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "295000001' data-elem-type='gallery' data-field-top-value=\"35\" data-field-left-value=\"620\" data-field-height-value=\"479\" "
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/3633-613_sebastian-dumitru-36.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 252183,
+   "width": 1680,
+   "height": 1120,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3633-6135-4932-b731-626131323435/sebastian-dumitru-36.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    ".tn-elem[data-elem-id=\"175946909520439440\"]{display:table;top:1088px;;left:calc(50% - 160px + 33px);;width:266px;height:"
+   ],
+   "probableType": "unknown",
+   "recommendedUsage": "Не использовать",
+   "notes": "Изображение на странице услуги.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/documents/3635-323_041-01021-66_0406488.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 266124,
+   "width": 1240,
+   "height": 1650,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3635-3239-4335-a263-353261626133/041-01021-66_0406488.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "dthunits-value=\"px\" data-field-fontsize-value=\"14\" data-field-top-res-360-value=\"243\" data-field-left-res-360-value=\"10\""
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3661-626_2458023-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 137795,
+   "width": 849,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3661-6265-4439-b835-313838373763/2458023-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3661-666_svg_1757011130578.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 18579,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3661-6665-4030-b962-626433346566/svg_1757011130578.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "field-filewidth-value=\"282\" data-field-fileheight-value=\"63\" data-field-heightmode-value=\"hug\" data-field-top-res-320-va"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3662-376_Frame_2131328551.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 354576,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3662-3764-4239-a534-343632646138/Frame_2131328551.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3663-396_Frame_2131328572.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 339847,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3663-3966-4935-b936-666338383062/Frame_2131328572.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie"
+   ],
+   "alt": [
+    "-1 t-img-select__indicator_fillmode-cover\" data-original=\"https://static.tildacdn.com/tild3063-6164-4662-a336-6330373239"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Главная",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3663-663_IMG_7762.JPG",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 253957,
+   "width": 1680,
+   "height": 2239,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3663-6636-4562-a264-653633613336/IMG_7762.JPG",
+   "pages": [
+    "https://pro-spokoystvie.ru/mnazakanyan_grant_armenovich"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3730-343_noroot_1.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 630883,
+   "width": 700,
+   "height": 784,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3730-3436-4535-a464-623133383966/noroot_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3735-303_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 465,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3735-3033-4461-b966-306161646133/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "ld-leftunits-value=\"px\" data-field-heightunits-value=\"px\" data-field-widthunits-value=\"px\" data-field-filewidth-value=\"3"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3735-643_Frame_1077236164.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 199635,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3735-6433-4063-a333-326630313738/Frame_1077236164.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "а к кризисных ситуациях в Екатеринбурге.\" /> <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;5"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3737-356_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 472558,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3737-3563-4562-b730-396635656237/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "iv class='t396__elem tn-elem tn-elem__20555013311773987535491' data-elem-id='1773987535491' data-elem-type='gallery' dat"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3737-636_photo.png",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 172632,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3737-6361-4331-b465-313535306364/photo.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/mnazakanyan_grant_armenovich"
+   ],
+   "alt": [
+    "твие\". Психологическая поддержка в сложных жизненных ситуациях в Екатеринбурге.\" /> <link href=\"https://fonts.googleapis"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/3738-373___2025-10-24_210611.png",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 1003265,
+   "width": 958,
+   "height": 662,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3738-3735-4237-a562-336335626162/__2025-10-24_210611.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [
+    "lue=\"px\" data-field-widthunits-value=\"px\" data-field-top-res-320-value=\"572\" data-field-left-res-320-value=\"10\" data-fie"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Контакты",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3739-626_11-11_______page-000.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 498752,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3739-6261-4734-b634-636163613430/11-11_______page-000.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "6__elem tn-elem tn-elem__20555013311773988158332000002' data-elem-id='1773988158332000002' data-elem-type='gallery' data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3761-636_80a9826e-4f87-4442-8.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 554602,
+   "width": 1200,
+   "height": 1600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3761-6366-4164-b738-636266623363/80a9826e-4f87-4442-8.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"5 of 6\" aria-current=\"false\"> <!-- nominify b"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3761-656_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 619795,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3761-6565-4434-b232-646133376533/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3038-343"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3762-306_11-7_____page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 364666,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3762-3062-4539-a361-613066336565/11-7_____page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "field-width-value=\"361\" data-field-axisy-value=\"top\" data-field-axisx-value=\"left\" data-field-container-value=\"grid\" dat"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3762-363_icons8--96_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1294,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3762-3638-4166-b835-353166656335/icons8--96_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna",
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "\"819\" data-field-left-res-640-value=\"32\" data-field-height-res-640-value=\"14\" data-field-top-res-960-value=\"323\" data-fi"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3763-353_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 3792,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3763-3539-4939-b535-363863323938/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "value=\"hug\" data-field-top-res-320-value=\"93\" data-field-left-res-320-value=\"-35\" data-field-height-res-320-value=\"602\" "
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3764-326_ChatGPT_Image_26__20.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1846332,
+   "width": 1024,
+   "height": 1536,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3764-3261-4537-b262-653264326435/ChatGPT_Image_26__20.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/kapelnicy"
+   ],
+   "alt": [
+    "10\" data-field-fontsize-res-320-value=\"22\"> Кому мы будем полезны #rec1967865071 .t396__artboard {height:810px;backgroun"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3764-383_Frame_2131328547.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 359538,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3764-3830-4966-b961-666539623533/Frame_2131328547.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3765-396_Frame_2131328553.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 394077,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3765-3961-4532-a633-343061653238/Frame_2131328553.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3832-386_12-16________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 572481,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3832-3861-4030-a662-343664346530/12-16________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "data-field-left-res-360-value=\"10\" data-field-height-res-360-value=\"479\" data-field-width-res-360-value=\"340\" data-field"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3833-373_photo.png",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 132122,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3833-3734-4332-a438-303432643363/photo.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/tadevosyan-narek-samvelovich"
+   ],
+   "alt": [
+    "Екатеринбург, консультация невролога Екатеринбург Уралмаш, невролог частная клиника Екатеринбург, как лечат мигрени, леч"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3834-363_3__.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 742,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild3834-3632-4266-a565-633933666336/3__.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "20-value=\"10\" data-field-height-res-320-value=\"265\" data-field-width-res-320-value=\"301\" data-field-top-res-480-value=\"2"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3834-363_dTK7v-QyO6ng3ELuqZ6l.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 127894,
+   "width": 720,
+   "height": 1080,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3834-3637-4838-a238-323035393632/dTK7v-QyO6ng3ELuqZ6l.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "hape' data-field-top-value=\"94\" data-field-left-value=\"1740\" data-field-height-value=\"100\" data-field-width-value=\"100\" "
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/3835-653___.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 419208,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3835-6537-4930-a332-333765626665/__.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "\"http://www.w3.org/1999/xlink\"> Оставьте заявку и мы свяжемся с Вами в течении 10 минут для консультации <div class=\"t-i"
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/3837-323_icons8-member-96.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 4780,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3837-3236-4332-a635-333430386133/icons8-member-96.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "-res-640-value=\"958\" data-field-left-res-640-value=\"264\" data-field-height-res-640-value=\"32\" data-field-width-res-640-v"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3861-306_498211-234703-tadevo.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 88139,
+   "width": 855,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3861-3061-4734-a138-623730616434/498211-234703-tadevo.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/tadevosyan-narek-samvelovich"
+   ],
+   "alt": [
+    "lateX(0);width:16px;animation-timing-function:ease-in-out;}27%{opacity:1;transform:translateX(-20px);width:21px;animatio"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3865-623_noroot.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 668045,
+   "width": 700,
+   "height": 874,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3865-6234-4630-b132-393136356132/noroot.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-psihology-help"
+   ],
+   "alt": [
+    "#ffffff;background-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !imp"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3866-616_Frame_2131328710.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 254785,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3866-6165-4338-a638-323265363833/Frame_2131328710.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-psihology-help"
+   ],
+   "alt": [
+    "ckground-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;tra"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3931-633_767d26d2-5a46-406e-9.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 155570,
+   "width": 1482,
+   "height": 1600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3931-6337-4339-b362-333438633238/767d26d2-5a46-406e-9.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": "UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3932-626_0f114fd8-18b4-494a-b.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 549236,
+   "width": 1600,
+   "height": 1200,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3932-6261-4361-b330-303766666138/0f114fd8-18b4-494a-b.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 of 6\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/3933-366_IMG_20250714_152854.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 252558,
+   "width": 818,
+   "height": 1158,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3933-3664-4465-b561-653230643933/IMG_20250714_152854.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"5 of 8\" aria-current=\"false\"> <img class=\"t-img t1148"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3934-633_12-15_____page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 174831,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3934-6335-4565-a435-666431353963/12-15_____page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "ield-width-value=\"361\" data-field-axisy-value=\"top\" data-field-axisx-value=\"left\" data-field-container-value=\"grid\" data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3935-323_11-4_______page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 449208,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3935-3232-4361-b737-306630363631/11-4_______page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "a-field-width-value=\"361\" data-field-axisy-value=\"top\" data-field-axisx-value=\"left\" data-field-container-value=\"grid\" d"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/3935-373_____.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 20446,
+   "width": 1345,
+   "height": 1273,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3935-3734-4066-b831-343635333734/____.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/about_prospokoystvie"
+   ],
+   "alt": [
+    "при совместной работе специалистов разного проф\" /> <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@30"
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3935-383_58198f89-16eb-4696-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 208008,
+   "width": 1000,
+   "height": 750,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3935-3834-4862-a163-366265646534/58198f89-16eb-4696-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 7\" aria-current=\"true\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3935-623_11-13______page-0007.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 590470,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3935-6232-4939-a135-303364353639/11-13______page-0007.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6465-373"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3937-386_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 637435,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3937-3861-4434-a335-666537393163/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3533-353"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3937-616_11-11_______page-000.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 602214,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3937-6161-4430-b932-613432323662/11-11_______page-000.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "-value=\"fixed\" data-field-fontsize-value=\"14\" data-field-top-res-360-value=\"791\" data-field-left-res-360-value=\"10\" data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3938-363_11-13______page-0001.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 453198,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3938-3637-4933-b131-666534356535/11-13______page-0001.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "6__elem tn-elem tn-elem__20555721411773988158332000002' data-elem-id='1773988158332000002' data-elem-type='gallery' data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": null,
+   "category": "documents",
+   "downloaded": false,
+   "bytes": 0,
+   "width": null,
+   "height": null,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3938-3637-4933-b131-666534356535/11-13______page-0009.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/3961-336_Frame_2131328549.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 245283,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild3961-3362-4735-b133-343336383734/Frame_2131328549.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "ckground-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;tra"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3962-623_498235-234703-tadevo.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 119234,
+   "width": 855,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3962-6231-4762-b336-613038363239/498235-234703-tadevo.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/tadevosyan-narek-samvelovich"
+   ],
+   "alt": [
+    "148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 2\" aria-current=\"true\"> <!-- nominify b"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/3963-363_11-11_______page-000.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 625824,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3963-3639-4362-b563-663932333435/11-11_______page-000.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3337-626"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3966-326_2473098-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 95691,
+   "width": 866,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3966-3266-4631-a261-383031313533/2473098-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 7\" aria-current=\"true\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/3966-653_2457488-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 139839,
+   "width": 872,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild3966-6537-4434-a265-316566653638/2457488-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6136-656_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 140218,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6136-6566-4431-a237-306537336534/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3336-353"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6137-333_IMG_20250714_153350.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 173070,
+   "width": 1056,
+   "height": 747,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6137-3330-4733-a463-373064613831/IMG_20250714_153350.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"6 of 8\" aria-current=\"false\"> t_onReady(function() {t"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6137-356_Frame_2131328548.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 272633,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6137-3564-4862-a539-666635343837/Frame_2131328548.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie-old"
+   ],
+   "alt": [
+    "nsCombination\":\"all\"}' data-field-type=\"ri\" data-field-name=\"Выберите специалиста\"> Выберите специалиста Психолог Дворни"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6138-346_IMG_20250714_152957.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 322299,
+   "width": 880,
+   "height": 1244,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6138-3466-4137-a162-373236623038/IMG_20250714_152957.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 of 8\" aria-current=\"false\"> <img class=\"t-img t1148"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6161-316_11-13______page-0009.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 183002,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6161-3163-4161-a666-393664643138/11-13______page-0009.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3336-326"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6162-366_photo.png",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 403547,
+   "width": 700,
+   "height": 714,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6162-3662-4262-b732-633765663234/photo.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie"
+   ],
+   "alt": [
+    ":#ffffff;background-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !im"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6164-376_icons8--96_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1375,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6164-3764-4531-b339-303366646339/icons8--96_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [
+    "eld-filewidth-value=\"96\" data-field-fileheight-value=\"96\" data-field-heightmode-value=\"hug\" data-field-top-res-320-value"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6230-353_77ae5037-d39d-4c56-8.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 123295,
+   "width": 1275,
+   "height": 970,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6230-3531-4430-b632-623437666661/77ae5037-d39d-4c56-8.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 of 6\" aria-current=\"false\"> t_onReady(function() {t_on"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6230-666_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 711693,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6230-6661-4265-a331-326439323936/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3631-356"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6233-306_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 942,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6233-3065-4566-b361-396564613666/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "lue=\"549\" data-field-left-res-640-value=\"1024\" data-field-height-res-640-value=\"21\" data-field-width-res-640-value=\"21\" "
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6233-343_c4bda2e1-3d2a-4bbf-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 202535,
+   "width": 1280,
+   "height": 960,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6233-3431-4932-b533-336261313334/c4bda2e1-3d2a-4bbf-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna"
+   ],
+   "alt": [
+    "lateX(0);width:16px;animation-timing-function:ease-in-out;}27%{opacity:1;transform:translateX(-20px);width:21px;animatio"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6233-363_svg_1755773393284.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 18381,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6233-3634-4835-a165-383866366237/svg_1755773393284.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "value=\"px\" data-field-heightunits-value=\"px\" data-field-widthunits-value=\"px\" data-field-filewidth-value=\"200\" data-fiel"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6236-373_Frame_2131328547.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 359538,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6236-3733-4435-a536-663265366463/Frame_2131328547.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247"
+   ],
+   "alt": [
+    "ckground-color:#325c80;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;tra"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6236-393_icons8---96.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 916,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6236-3931-4566-b734-373561323466/icons8---96.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna",
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna",
+    "https://pro-spokoystvie.ru/mnazakanyan_grant_armenovich",
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "-320-value=\"19\" data-field-top-res-480-value=\"350\" data-field-left-res-480-value=\"30\" data-field-height-res-480-value=\"1"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6237-663_11-13______page-0004.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 561525,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6237-6632-4439-a362-363632366162/11-13______page-0004.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6430-626"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6238-326_Frame_2131328548.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 272633,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6238-3261-4164-b237-613965653464/Frame_2131328548.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6238-336_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 587634,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6238-3365-4666-a237-666166393534/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "-value=\"fixed\" data-field-fontsize-value=\"14\" data-field-top-res-360-value=\"161\" data-field-left-res-360-value=\"10\" data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6261-663_icons8-heart-with-pu.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 5280,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6261-6632-4538-b765-356435643337/icons8-heart-with-pu.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "-res-640-value=\"958\" data-field-left-res-640-value=\"525\" data-field-height-res-640-value=\"32\" data-field-width-res-640-v"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6265-383_icons8---96_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 995,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6265-3832-4238-a639-323861643562/icons8---96_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "d-height-res-320-value=\"36\" data-field-width-res-320-value=\"36\" data-field-top-res-480-value=\"401\" data-field-left-res-4"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6266-306_IMG_20250714_153103.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 215768,
+   "width": 1121,
+   "height": 822,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6266-3063-4534-b165-646138643831/IMG_20250714_153103.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 of 8\" aria-current=\"false\"> <img class=\"t-img t1148"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6266-336_18920.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 138917,
+   "width": 1680,
+   "height": 1121,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6266-3361-4866-b231-643261646666/18920.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy"
+   ],
+   "alt": [
+    "tunits-value=\"px\" data-field-heightunits-value=\"px\" data-field-widthunits-value=\"px\" data-field-widthmode-value=\"fixed\" "
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/graphics/6330-383_Frame_2131328710.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 254785,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6330-3838-4762-a334-376363653739/Frame_2131328710.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6330-613_2457483-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 129481,
+   "width": 846,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6330-6136-4239-a163-363830643736/2457483-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"5 of 7\" aria-current=\"false\"> t_onReady(function() {t_on"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6331-636_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 728755,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6331-6366-4334-b631-303032623731/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6531-633"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6331-656_IMG_20250811_152111.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 223765,
+   "width": 1030,
+   "height": 822,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6331-6563-4538-a262-613463623937/IMG_20250811_152111.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "hape' data-field-top-value=\"94\" data-field-left-value=\"1740\" data-field-height-value=\"100\" data-field-width-value=\"100\" "
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6332-636_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 2139,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6332-6366-4438-a631-633633353766/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "eld-height-res-480-value=\"21\" data-field-top-res-640-value=\"549\" data-field-left-res-640-value=\"1071\" data-field-height-"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/6336-643___.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 23237,
+   "width": 1345,
+   "height": 1273,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6336-6432-4965-a234-333837333939/__.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6337-326_qr-code_29.png",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 30227,
+   "width": 1125,
+   "height": 1125,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6337-3266-4033-b464-306530373731/qr-code_29.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "-top-value=\"362\" data-field-left-value=\"398\" data-field-height-value=\"200\" data-field-width-value=\"200\" data-field-axisy"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6337-363_ruki-s-percatkami-i-.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 194805,
+   "width": 1680,
+   "height": 2520,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6337-3637-4238-a230-633035386361/ruki-s-percatkami-i-.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6337-643_dani-guitarra-FKcZYH.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 116073,
+   "width": 1680,
+   "height": 945,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6337-6435-4163-a562-323139666333/dani-guitarra-FKcZYH.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie-old"
+   ],
+   "alt": [
+    "em-id=\"1758886066960\"] .tn-atom .tn-atom__button-border::after{display:none;}@media (hover),(min-width:0\\0){#rec13558438"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/clinic/6339-613_IMG_8431_1.jpg",
+   "category": "clinic",
+   "downloaded": true,
+   "bytes": 1957730,
+   "width": 1400,
+   "height": 1132,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6339-6133-4239-a634-656166643033/IMG_8431_1.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": "EXTERIOR/facade with logo+hours sign; sign shows 9:00-19:00 (differs from confirmed Пн–Пт 08:00–20:00 — verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6339-663_icons8--96_1.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1375,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6339-6634-4633-b234-343566313465/icons8--96_1.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "res-480-value=\"39\" data-field-height-res-480-value=\"26\" data-field-top-res-640-value=\"918\" data-field-left-res-640-value"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6362-616_icons8--96.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 4055,
+   "width": 96,
+   "height": 96,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6362-6161-4963-b532-366362663333/icons8--96.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "\"525\" data-field-height-res-640-value=\"32\" data-field-width-res-640-value=\"32\" data-field-widthmode-res-640-value=\"fixed"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6362-626_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 1036,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6362-6264-4732-a537-373534353333/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "g\" data-field-top-res-320-value=\"-590\" data-field-left-res-320-value=\"3156\" data-field-height-res-320-value=\"40\" data-fi"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6365-613_IMG_20250714_153029.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 293186,
+   "width": 887,
+   "height": 1254,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6365-6132-4530-b766-356330663765/IMG_20250714_153029.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "\"t1148__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"1 of 8\" aria-current=\"true\"> <img class=\"t-img t1148"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6430-626_11-13______page-0003.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 738032,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6430-6265-4466-b237-396235356463/11-13______page-0003.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3134-396"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6433-363_roman-kraft-0EVKn3-5.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 65611,
+   "width": 1680,
+   "height": 1121,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6433-3638-4361-a435-623236336530/roman-kraft-0EVKn3-5.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/graphics/6435-656_Frame_2131328550.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 344943,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6435-6564-4466-b563-633931633633/Frame_2131328550.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie"
+   ],
+   "alt": [
+    "__indicator_fillmode-cover\" data-original=\"https://static.tildacdn.com/tild6137-3564-4862-a539-666635343837/Frame_213132"
+   ],
+   "probableType": "service_image",
+   "recommendedUsage": "Услуга",
+   "notes": "Изображение на странице услуги.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6437-353_11-12________page-00.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 496735,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6437-3539-4131-b966-333264666136/11-12________page-00.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "iv class='t396__elem tn-elem tn-elem__20555721411773987535491' data-elem-id='1773987535491' data-elem-type='gallery' dat"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6439-656_1684991-969027-ivano.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 8785,
+   "width": 300,
+   "height": 300,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6439-6566-4635-b734-313737346162/1684991-969027-ivano.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna"
+   ],
+   "alt": [
+    "shape' data-field-top-value=\"94\" data-field-left-value=\"1740\" data-field-height-value=\"100\" data-field-width-value=\"100\""
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6461-633_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 465,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6461-6330-4934-b037-653564653865/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/kapelnicy",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html"
+   ],
+   "alt": [
+    "px\" data-field-heightunits-value=\"px\" data-field-widthunits-value=\"px\" data-field-filewidth-value=\"34\" data-field-filehe"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/6461-636_Vector.png",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 4192,
+   "width": 352,
+   "height": 352,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6461-6361-4435-a638-303665666130/Vector.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts"
+   ],
+   "alt": [
+    "d-filewidth-value=\"352\" data-field-fileheight-value=\"352\" data-field-heightmode-value=\"hug\" data-field-top-res-320-value"
+   ],
+   "probableType": "clinic_interior",
+   "recommendedUsage": "Контакты",
+   "notes": "Изображение связано со страницей клиники/контактов, но ракурс неочевиден.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6462-393_4543df9d-f665-40ec-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 56220,
+   "width": 828,
+   "height": 636,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6462-3936-4637-b063-643934633763/4543df9d-f665-40ec-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"5 of 7\" aria-current=\"false\"> t_onReady(function() {t_on"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6463-613_069a37e9-f6f7-45f8-8.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 203107,
+   "width": 1000,
+   "height": 721,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6463-6134-4164-b935-303663653935/069a37e9-f6f7-45f8-8.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"3 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/unknown/6464-656_bethany-beck-82NHIKI.jpg",
+   "category": "unknown",
+   "downloaded": true,
+   "bytes": 147431,
+   "width": 1680,
+   "height": 1120,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6464-6564-4861-b636-663133363765/bethany-beck-82NHIKI.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/specialisty_prospokoistvie"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": true
+  },
+  {
+   "file": "/donor-media-v1/documents/6465-373_11-13______page-0006.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 557903,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6465-3736-4231-a131-643263633363/11-13______page-0006.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild3334-633"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6531-633_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 768591,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6531-6334-4261-b866-393065313966/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6230-666"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6532-333_2848792-913641-selki.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 94950,
+   "width": 861,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6532-3332-4530-b938-376465366565/2848792-913641-selki.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "lateX(0);width:16px;animation-timing-function:ease-in-out;}27%{opacity:1;transform:translateX(-20px);width:21px;animatio"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | ПроДокторов-watermarked credential scan — NOT a portrait; do not use.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/6533-323____.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 16660,
+   "width": 1345,
+   "height": 623,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6533-3237-4162-a665-666261366134/___.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/lechenie-ot-alkigolizma",
+    "https://pro-spokoystvie.ru/lechenie-ot-narkomanii-prospokoystvie",
+    "https://pro-spokoystvie.ru/lechenie-trevogi-i-nevrozov",
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "госрочная поддержка для восстановления здоровья\" /> <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@30"
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6535-323_IMG_20250727_144041_.jpg",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 209756,
+   "width": 1680,
+   "height": 2039,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6535-3237-4961-a665-656539656461/IMG_20250727_144041_.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "hape' data-field-top-value=\"94\" data-field-left-value=\"1740\" data-field-height-value=\"100\" data-field-width-value=\"100\" "
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6536-383_transparent-Photoroo.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 267257,
+   "width": 589,
+   "height": 1015,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6536-3831-4732-b633-363132313362/transparent-Photoroo.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/6537-623_photo_51995425907374.jpg",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 187179,
+   "width": 1280,
+   "height": 976,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6537-6237-4662-a662-316161333936/photo_51995425907374.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/kapelnicy"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6537-656_Frame_57156.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 113230,
+   "width": 983,
+   "height": 487,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6537-6565-4635-b137-643831363561/Frame_57156.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/6562-356____.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 17741,
+   "width": 1345,
+   "height": 1273,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6562-3564-4133-a434-333037356630/___.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/page73682247",
+    "https://pro-spokoystvie.ru/page73682247.html",
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich",
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [
+    "le> <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Noto+Sans:wght@100..900"
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6562-393_7770febd-7d19-4628-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 210562,
+   "width": 1000,
+   "height": 750,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6562-3934-4732-b731-356436363436/7770febd-7d19-4628-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"4 of 7\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6562-633_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 637252,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6562-6338-4132-b932-633465363033/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "-value=\"fixed\" data-field-fontsize-value=\"14\" data-field-top-res-360-value=\"132\" data-field-left-res-360-value=\"10\" data"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/icons/6564-363_icons8-graduation-ca.png",
+   "category": "icons",
+   "downloaded": true,
+   "bytes": 1193,
+   "width": 90,
+   "height": 90,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6564-3633-4261-a362-366464306238/icons8-graduation-ca.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna",
+    "https://pro-spokoystvie.ru/franko-olga-vasilevna",
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna",
+    "https://pro-spokoystvie.ru/mnazakanyan_grant_armenovich",
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "-res-320-value=\"826\" data-field-left-res-320-value=\"28\" data-field-height-res-320-value=\"14\" data-field-top-res-480-valu"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6565-613_b4260e05-f629-45c0-9.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 56807,
+   "width": 449,
+   "height": 600,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6565-6137-4733-b964-316238383866/b4260e05-f629-45c0-9.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"6 of 7\" aria-current=\"false\"> <!-- nominify b"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6566-616_Frame_1077236163.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 153339,
+   "width": 741,
+   "height": 394,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6566-6161-4330-a231-343465663564/Frame_1077236163.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/ivanova-olga-vechaslavovna"
+   ],
+   "alt": [
+    "мы, заболеваниях сердечно-сосудистой системы в Екатеринбурге\" /> <link href=\"https://fonts.googleapis.com/css2?family=Ma"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6631-306_0a04f1ac-67fd-4168-8.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 522245,
+   "width": 1600,
+   "height": 1200,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6631-3061-4163-b163-633830356538/0a04f1ac-67fd-4168-8.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/romanovskiy-vladimir-olegovich"
+   ],
+   "alt": [
+    "48__item\" role=\"group\" aria-roledescription=\"slide\" aria-label=\"2 of 6\" aria-current=\"false\"> <img class=\"t-img t1148__i"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6631-363_photo.svg",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 492,
+   "width": null,
+   "height": null,
+   "type": "svg",
+   "sourceUrl": "https://static.tildacdn.com/tild6631-3631-4536-b830-386361373034/photo.svg",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "field-left-res-320-value=\"228\" data-field-height-res-320-value=\"18\" data-field-top-res-480-value=\"40\" data-field-left-re"
+   ],
+   "probableType": "icon",
+   "recommendedUsage": "Не использовать",
+   "notes": "Служебная иконка старого сайта.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/certificates/6631-363_bd8bb4f4-3570-448d-a.jpg",
+   "category": "certificates",
+   "downloaded": true,
+   "bytes": 256844,
+   "width": 1200,
+   "height": 900,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6631-3636-4563-b361-336339626634/bd8bb4f4-3570-448d-a.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/shevchuk-olesya-vechaslavovna"
+   ],
+   "alt": [
+    "lateX(0);width:16px;animation-timing-function:ease-in-out;}27%{opacity:1;transform:translateX(-20px);width:21px;animatio"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов. | UUID-named scan on doctor page → certificate/diploma (verify).",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/6632-346___.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 6692,
+   "width": 505,
+   "height": 139,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6632-3466-4134-b861-373636373465/__.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "v id=\"rec1350586341\" class=\"r t-rec t-rec_pt_0 t-rec_pb_0\" style=\"padding-top:0px;padding-bottom:0px; \" data-animationap"
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/documents/6632-386_11-10_______pages-to.jpg",
+   "category": "documents",
+   "downloaded": true,
+   "bytes": 486820,
+   "width": 1241,
+   "height": 1755,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6632-3861-4565-b362-383638313865/11-10_______pages-to.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/documents"
+   ],
+   "alt": [
+    "quot;,\"li_imgtarget\":\"\",\"li_imgnofollow\":\"\",\"li_youtube\":\"\",\"li_vimeo\":\"\",\"li_webm\":\"\",\"li_mp4\":\"\"},{\"lid\":\"tild6331-636"
+   ],
+   "probableType": "document_scan",
+   "recommendedUsage": "Доверие / лицензии",
+   "notes": "Скан документа или лицензии.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/logo/6633-386_Max_logo_2025.png",
+   "category": "logo",
+   "downloaded": true,
+   "bytes": 79232,
+   "width": 720,
+   "height": 720,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6633-3864-4438-b364-343965663334/Max_logo_2025.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/",
+    "https://pro-spokoystvie.ru/about_prospokoystvie",
+    "https://pro-spokoystvie.ru/bezyazykova-inga-valerevna",
+    "https://pro-spokoystvie.ru/contacts",
+    "https://pro-spokoystvie.ru/documents",
+    "https://pro-spokoystvie.ru/dvornikova-ekaterina-aleksandrovna"
+   ],
+   "alt": [
+    "es-480-value=\"49\" data-field-height-res-480-value=\"26\" data-field-top-res-640-value=\"928\" data-field-left-res-640-value="
+   ],
+   "probableType": "logo",
+   "recommendedUsage": "Главная",
+   "notes": "Вероятный логотип или фирменный знак.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/doctors/6633-643_IMG_7762.JPG",
+   "category": "doctors",
+   "downloaded": true,
+   "bytes": 253957,
+   "width": 1680,
+   "height": 2239,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6633-6431-4266-b564-643333633233/IMG_7762.JPG",
+   "pages": [
+    "https://pro-spokoystvie.ru/mnazakanyan_grant_armenovich"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/backgrounds/6637-323_877707d5f7f84893bb504b3824d9ebda.jpg",
+   "category": "backgrounds",
+   "downloaded": true,
+   "bytes": 17726,
+   "width": 409,
+   "height": 409,
+   "type": "jpg",
+   "sourceUrl": "https://static.tildacdn.com/tild6637-3233-4432-a138-386133326665/877707d5f7f84893bb504b3824d9ebda.jpg",
+   "pages": [
+    "https://pro-spokoystvie.ru/uslugi-prospokoystvie"
+   ],
+   "alt": [
+    "c_pb_90\" style=\"padding-top:45px;padding-bottom:90px;background-color:#ffffff; \" data-animationappear=\"off\" data-record-"
+   ],
+   "probableType": "doctor_photo",
+   "recommendedUsage": "Страница врача",
+   "notes": "Изображение на странице врача или блока специалистов.",
+   "stock": false
+  },
+  {
+   "file": "/donor-media-v1/graphics/6639-663_Frame_2131328550.png",
+   "category": "graphics",
+   "downloaded": true,
+   "bytes": 344943,
+   "width": 700,
+   "height": 700,
+   "type": "png",
+   "sourceUrl": "https://static.tildacdn.com/tild6639-6638-4632-a631-363937316661/Frame_2131328550.png",
+   "pages": [
+    "https://pro-spokoystvie.ru/selkina-evgeniya-olegovna"
+   ],
+   "alt": [],
+   "probableType": null,
+   "recommendedUsage": null,
+   "notes": null,
+   "stock": false
+  }
+ ]
+}
