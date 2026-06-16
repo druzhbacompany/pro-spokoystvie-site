@@ -17,8 +17,9 @@ export function BookingForm({
 }) {
   const [done, setDone] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -35,8 +36,28 @@ export function BookingForm({
       return;
     }
     setError(null);
-    setDone(name);
-    form.reset();
+    setLoading(true);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          phone,
+          time: (data.get("time") as string) || null,
+          doctor: (data.get("doctor") as string) || null,
+          consent: true,
+          company: (data.get("company") as string) || "",
+        }),
+      });
+      if (!res.ok) throw new Error("request_failed");
+      setDone(name);
+      form.reset();
+    } catch {
+      setError("Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (done) {
@@ -169,9 +190,10 @@ export function BookingForm({
 
         <button
           type="submit"
-          className="min-h-[54px] w-full rounded-control bg-brand px-6 font-medium text-[#fcfbf8] shadow-sm transition-all duration-[180ms] ease-calm hover:-translate-y-[1px] hover:bg-brand-hover hover:shadow-md active:scale-[0.99]"
+          disabled={loading}
+          className="min-h-[54px] w-full rounded-control bg-brand px-6 font-medium text-[#fcfbf8] shadow-sm transition-all duration-[180ms] ease-calm hover:-translate-y-[1px] hover:bg-brand-hover hover:shadow-md active:scale-[0.99] disabled:opacity-70"
         >
-          Перезвоним и подберём время
+          {loading ? "Отправляем…" : "Перезвоним и подберём время"}
         </button>
 
         <p className="type-micro text-center">

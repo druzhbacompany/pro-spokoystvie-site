@@ -1,7 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CLINIC } from "@/lib/data";
 
-const NAV = ["Как мы помогаем", "Направления", "Врачи", "Цены", "Контакты"];
+const NAV = [
+  { label: "Услуги", href: "/uslugi/" },
+  { label: "Врачи", href: "/vrachi/" },
+  { label: "Цены", href: "/tseny/" },
+  { label: "Документы", href: "/dokumenty/" },
+  { label: "Контакты", href: "/kontakty/" },
+];
 
 export function FooterV4() {
   return (
@@ -20,7 +27,7 @@ export function FooterV4() {
         <nav aria-label="Навигация в подвале">
           <p className="text-[13px] font-semibold uppercase tracking-wider" style={{ color: "#6F9FBE" }}>Разделы</p>
           <ul className="mt-4 space-y-3">
-            {NAV.map((n) => (<li key={n}><a href="#" className="text-[15px] hover:opacity-80" style={{ color: "#C7D4DD" }}>{n}</a></li>))}
+            {NAV.map((n) => (<li key={n.href}><Link href={n.href} className="text-[15px] hover:opacity-80" style={{ color: "#C7D4DD" }}>{n.label}</Link></li>))}
           </ul>
         </nav>
         <div>

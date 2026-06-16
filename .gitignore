@@ -14,6 +14,9 @@ tsconfig.tsbuildinfo
 *.xls
 .claude/
 
+# exception: the public price list must ship with the site
+!public/documents/preyskurant-pro-spokoystvie.docx
+
 # internal project materials
 design-board/
 docs/

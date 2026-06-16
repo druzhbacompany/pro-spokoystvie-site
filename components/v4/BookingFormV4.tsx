@@ -7,8 +7,9 @@ import { CLINIC, TIME_SLOTS } from "@/lib/data";
 export function BookingFormV4() {
   const [done, setDone] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const f = e.currentTarget;
     const d = new FormData(f);
@@ -18,8 +19,27 @@ export function BookingFormV4() {
     if (!name || !phone) return setError("Укажите имя и телефон — это всё, что нужно.");
     if (!d.get("consent")) return setError("Отметьте согласие на обработку персональных данных.");
     setError(null);
-    setDone(name);
-    f.reset();
+    setLoading(true);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          phone,
+          time: (d.get("time") as string) || null,
+          consent: true,
+          company: (d.get("company") as string) || "",
+        }),
+      });
+      if (!res.ok) throw new Error("request_failed");
+      setDone(name);
+      f.reset();
+    } catch {
+      setError("Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (done)
@@ -62,7 +82,9 @@ export function BookingFormV4() {
           <span className="v2-body" style={{ color: "var(--v2-text-mid)" }}>Согласен на обработку персональных данных для записи на приём.</span>
         </label>
         {error ? <p className="v2-body" style={{ color: "var(--v2-error)" }} role="alert">{error}</p> : null}
-        <button type="submit" className="v2-btn v2-btn-primary w-full">Перезвоним и подберём время</button>
+        <button type="submit" disabled={loading} className="v2-btn v2-btn-primary w-full disabled:opacity-70">
+          {loading ? "Отправляем…" : "Перезвоним и подберём время"}
+        </button>
         <p className="text-center text-[13px]" style={{ color: "var(--v2-text-mid)" }}>
           Или позвоните: {CLINIC.phone} · {CLINIC.hoursWeek} · {CLINIC.hoursWeekend}
         </p>

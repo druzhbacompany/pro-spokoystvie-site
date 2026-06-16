@@ -5,7 +5,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CLINIC } from "@/lib/data";
 
-const NAV = ["Услуги", "Врачи", "Цены", "Контакты"];
+const NAV = [
+  { label: "Услуги", href: "/uslugi/" },
+  { label: "Врачи", href: "/vrachi/" },
+  { label: "Цены", href: "/tseny/" },
+  { label: "Документы", href: "/dokumenty/" },
+  { label: "Контакты", href: "/kontakty/" },
+];
 
 /** V4 TopBar — REAL donor logo (logo-trimmed.png, exact geometry), ghost CTA. */
 export function TopBarV4() {
@@ -25,7 +31,7 @@ export function TopBarV4() {
       style={{ borderColor: "var(--v2-border)", background: "color-mix(in srgb, var(--v2-bg) 86%, transparent)" }}
     >
       <div className={`v2-container flex items-center justify-between gap-4 transition-all duration-200 ${scrolled ? "h-16" : "h-[72px] md:h-20"}`}>
-        <Link href="#" aria-label="ПРО спокойствие — на главную" className="flex items-center">
+        <Link href="/" aria-label="ПРО спокойствие — на главную" className="flex items-center">
           <Image
             src="/donor-assets-v2/logo/logo-trimmed.png"
             alt="ПРО спокойствие — медицинский центр"
@@ -38,7 +44,7 @@ export function TopBarV4() {
 
         <nav aria-label="Основная навигация" className="hidden items-center gap-7 lg:flex">
           {NAV.map((item) => (
-            <a key={item} href="#" className="text-[15px] font-medium transition-colors hover:opacity-80" style={{ color: "var(--v2-text-mid)" }}>{item}</a>
+            <Link key={item.href} href={item.href} className="text-[15px] font-medium transition-colors hover:opacity-80" style={{ color: "var(--v2-text-mid)" }}>{item.label}</Link>
           ))}
         </nav>
 
@@ -61,7 +67,7 @@ export function TopBarV4() {
         <div id="v4-menu" className="border-t px-4 pb-6 pt-4 lg:hidden" style={{ borderColor: "var(--v2-border)" }}>
           <a href="#zayavka" onClick={() => setOpen(false)} className="v2-btn v2-btn-primary mb-4 w-full">Записаться</a>
           <nav aria-label="Мобильная навигация" className="flex flex-col">
-            {NAV.map((item) => (<a key={item} href="#" onClick={() => setOpen(false)} className="border-b py-3 text-lg" style={{ borderColor: "var(--v2-border)", color: "var(--v2-blue-deep)" }}>{item}</a>))}
+            {NAV.map((item) => (<Link key={item.href} href={item.href} onClick={() => setOpen(false)} className="border-b py-3 text-lg" style={{ borderColor: "var(--v2-border)", color: "var(--v2-blue-deep)" }}>{item.label}</Link>))}
           </nav>
         </div>
       ) : null}
