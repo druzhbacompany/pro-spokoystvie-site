@@ -61,25 +61,40 @@ export function DoctorProfile({ doctor }: { doctor: Doctor }) {
           </div>
         </section>
 
-        {/* Services of the doctor (crosslink) */}
+        {/* С чем помогает врач (crosslink doctor → service, else booking w/ context) */}
         <section className="smt-section smt-section-alt">
           <div className="smt-container">
-            <h2 className="smt-h2">С чем помогает</h2>
-            {doctorServices.length ? (
-              <ul className="mt-6 flex flex-wrap gap-3">
-                {doctorServices.map((s) => (
-                  <li key={s.slug}>
-                    <Link href={`/uslugi/${s.slug}/`} className="smt-chip is-link" style={{ background: "#fff", border: "1px solid var(--smt-border)" }}>
-                      {s.catalogTitle} →
-                    </Link>
+            <h2 className="smt-h2">С чем помогает врач</h2>
+            <ul className="mt-6 flex flex-wrap gap-3">
+              {doctor.helps.map((h) => {
+                const svc = SERVICES.find((s) => s.hasPage && s.catalogTitle.toLowerCase() === h.toLowerCase());
+                return (
+                  <li key={h}>
+                    {svc ? (
+                      <Link href={`/uslugi/${svc.slug}/`} className="smt-chip is-link" style={{ background: "#fff", border: "1px solid var(--smt-border)" }}>
+                        {h} →
+                      </Link>
+                    ) : (
+                      <Link href={`/kontakty/?service=${encodeURIComponent(h)}&doctor=${encodeURIComponent(doctor.shortName)}#zayavka`} className="smt-chip is-link" style={{ background: "#fff", border: "1px solid var(--smt-border)" }}>
+                        {h} · Записаться
+                      </Link>
+                    )}
                   </li>
-                ))}
-              </ul>
-            ) : (
-              <ul className="mt-6 flex flex-wrap gap-3">
-                {doctor.helps.map((h) => (<li key={h}><span className="smt-chip">{h}</span></li>))}
-              </ul>
-            )}
+                );
+              })}
+            </ul>
+            {doctorServices.length ? (
+              <div className="mt-6">
+                <p className="text-[14px] smt-muted">Профильные направления:</p>
+                <ul className="mt-3 flex flex-wrap gap-3">
+                  {doctorServices.map((s) => (
+                    <li key={s.slug}>
+                      <Link href={`/uslugi/${s.slug}/`} className="smt-link">{s.catalogTitle} →</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </section>
 

@@ -6,7 +6,7 @@ import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { ServiceCard } from "@/components/smt/ServiceCard";
 import { PhotoPlaceholder } from "@/components/smt/Placeholder";
-import { DOCTORS, SERVICES, SERVICE_CATEGORIES, CLINIC } from "@/lib/data";
+import { DOCTORS, SERVICES, SERVICE_CATEGORIES, PROGRAMS, CLINIC } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "ПРО спокойствие — психиатрия, психотерапия, психология и неврология в Екатеринбурге",
@@ -79,19 +79,21 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* [4] Programs (placeholder — not yet built) */}
+        {/* [4] Programs */}
         <section className="smt-section">
           <div className="smt-container">
             <p className="smt-eyebrow">Программы</p>
             <h2 className="smt-h2 mt-2">Комплексные программы</h2>
-            <div className="mt-6 grid gap-5 sm:grid-cols-3">
-              {["Тревога и неврозы", "Панические атаки", "Семейная поддержка"].map((p) => (
-                <div key={p} className="smt-card smt-card-pad">
-                  <h3 className="smt-h3">{p}</h3>
-                  <p className="mt-2 text-[15px] smt-muted">Информация готовится. Состав и стоимость программы будут добавлены после согласования.</p>
-                </div>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {PROGRAMS.map((p) => (
+                <Link key={p.slug} href={`/programmy/${p.slug}/`} className="smt-card smt-card-pad is-link flex h-full flex-col" aria-label={`Подробнее: ${p.title}`}>
+                  <h3 className="smt-h3">{p.title}</h3>
+                  <p className="mt-2 flex-1 text-[15px] smt-muted">{p.blurb}</p>
+                  <span className="smt-link mt-4 inline-flex">Подробнее →</span>
+                </Link>
               ))}
             </div>
+            <Link href="/programmy/" className="smt-link mt-8 inline-flex">Все программы →</Link>
           </div>
         </section>
 

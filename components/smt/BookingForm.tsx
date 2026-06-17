@@ -1,13 +1,57 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import Link from "next/link";
+import { useEffect, useState, type FormEvent } from "react";
 import { CLINIC, TIME_SLOTS } from "@/lib/data";
 
-/** SMT-style booking form. Posts to /api/lead. Name + phone + consent, honeypot. */
-export function BookingForm({ topic, doctor }: { topic?: string; doctor?: string }) {
+/**
+ * SMT-style booking form. Posts to /api/lead with full conversion context
+ * (page URL/title, source block, service/doctor/price item, CTA label).
+ * Service/doctor/price can come from props OR ?service=/?doctor=/?priceItem= query.
+ */
+export function BookingForm({
+  topic,
+  doctor,
+  priceItem,
+  price,
+  sourceBlock,
+  ctaLabel = "Перезвоним и подберём время",
+}: {
+  topic?: string;
+  doctor?: string;
+  priceItem?: string;
+  price?: string;
+  sourceBlock?: string;
+  ctaLabel?: string;
+}) {
   const [done, setDone] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [ctx, setCtx] = useState<{ service?: string; doctor?: string; priceItem?: string; price?: string }>({
+    service: topic,
+    doctor,
+    priceItem,
+    price,
+  });
+
+  // Fallback: read context from URL query (set by service/price card links).
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    setCtx((prev) => ({
+      service: prev.service ?? q.get("service") ?? undefined,
+      doctor: prev.doctor ?? q.get("doctor") ?? undefined,
+      priceItem: prev.priceItem ?? q.get("priceItem") ?? undefined,
+      price: prev.price ?? q.get("price") ?? undefined,
+    }));
+  }, []);
+
+  const contextLine = ctx.doctor
+    ? `Вы выбрали врача: ${ctx.doctor}`
+    : ctx.priceItem
+      ? `Вы выбрали: ${ctx.priceItem}${ctx.price ? ` · ${ctx.price}` : ""}`
+      : ctx.service
+        ? `Вы выбрали: ${ctx.service}`
+        : null;
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -28,8 +72,14 @@ export function BookingForm({ topic, doctor }: { topic?: string; doctor?: string
           name,
           phone,
           time: (d.get("time") as string) || null,
-          topic: topic ?? null,
-          doctor: doctor ?? null,
+          topic: ctx.service ?? null,
+          doctor: ctx.doctor ?? null,
+          priceItem: ctx.priceItem ?? null,
+          price: ctx.price ?? null,
+          sourceBlock: sourceBlock ?? null,
+          ctaLabel,
+          pageUrl: window.location.pathname + window.location.search,
+          pageTitle: document.title,
           consent: true,
           company: (d.get("company") as string) || "",
         }),
@@ -49,15 +99,24 @@ export function BookingForm({ topic, doctor }: { topic?: string; doctor?: string
       <div className="smt-card smt-card-pad text-center" role="status" aria-live="polite">
         <p className="smt-h3">Спасибо, {done}.</p>
         <p className="smt-body mt-2 smt-muted">
-          Мы перезвоним в течение 15 минут в рабочее время. В нерабочее — первыми с 08:00.
+          Заявка отправлена. Администратор свяжется с вами в течение 15 минут в рабочее время.
         </p>
+        <div className="mt-5 flex flex-wrap justify-center gap-4">
+          <Link href="/" className="smt-link">Главная</Link>
+          <Link href="/uslugi/" className="smt-link">Услуги</Link>
+          <Link href="/kontakty/" className="smt-link">Контакты</Link>
+        </div>
       </div>
     );
 
   return (
     <form onSubmit={onSubmit} noValidate className="smt-card smt-card-pad md:!p-7">
       <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
-      {topic ? <p className="smt-body mb-4">Тема: <strong style={{ color: "var(--smt-dark)" }}>{topic}</strong></p> : null}
+      {contextLine ? (
+        <p className="mb-4 rounded-[12px] px-4 py-3 text-[15px]" style={{ background: "var(--smt-blue-bg)", color: "var(--smt-dark)" }}>
+          {contextLine}
+        </p>
+      ) : null}
       <div className="grid gap-5">
         <fieldset className="flex flex-col gap-2">
           <legend className="smt-body mb-1 smt-muted">Удобное время</legend>
@@ -86,7 +145,7 @@ export function BookingForm({ topic, doctor }: { topic?: string; doctor?: string
         </label>
         {error ? <p className="smt-body" style={{ color: "#b91c1c" }} role="alert">{error}</p> : null}
         <button type="submit" disabled={loading} className="smt-btn smt-btn-primary w-full">
-          {loading ? "Отправляем…" : "Перезвоним и подберём время"}
+          {loading ? "Отправляем…" : ctaLabel}
         </button>
         <p className="text-center text-[13px] smt-muted">
           Или позвоните: {CLINIC.phone} · {CLINIC.hoursWeek} · {CLINIC.hoursWeekend}

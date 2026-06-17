@@ -21,6 +21,13 @@ type LeadPayload = {
   topic?: string;
   consent?: boolean;
   company?: string; // honeypot
+  // conversion context
+  pageUrl?: string;
+  pageTitle?: string;
+  sourceBlock?: string;
+  priceItem?: string;
+  price?: string;
+  ctaLabel?: string;
 };
 
 export async function POST(request: Request) {
@@ -53,6 +60,13 @@ export async function POST(request: Request) {
     time: body.time ?? null,
     doctor: body.doctor ?? null,
     topic: body.topic ?? null,
+    // conversion context
+    pageUrl: body.pageUrl ?? null,
+    pageTitle: body.pageTitle ?? null,
+    sourceBlock: body.sourceBlock ?? null,
+    priceItem: body.priceItem ?? null,
+    price: body.price ?? null,
+    ctaLabel: body.ctaLabel ?? null,
     receivedAt: new Date().toISOString(),
   });
 

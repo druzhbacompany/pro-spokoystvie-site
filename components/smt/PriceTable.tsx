@@ -1,6 +1,14 @@
+import Link from "next/link";
 import { PRICELIST } from "@/lib/data";
 
-/** SMT-style price table. PRO segmented price logic kept; SMT row density/look. */
+const book = (params: Record<string, string>) =>
+  `/kontakty/?${new URLSearchParams(params).toString()}#zayavka`;
+
+/**
+ * SMT-style price table. Each row name links to the form prefilled with the
+ * price item (name + price). Each section has its own CTA. Mobile-safe:
+ * no per-row buttons (name link + one section CTA), price right-aligned.
+ */
 export function PriceTable() {
   return (
     <div className="space-y-12">
@@ -21,8 +29,15 @@ export function PriceTable() {
                     <tbody>
                       {group.items.map((item, i) => (
                         <tr key={item.code} style={{ background: i % 2 ? "var(--smt-grey)" : "#fff" }}>
-                          <th scope="row" className="px-4 py-3.5 text-left text-[15px] font-normal sm:px-5" style={{ color: "var(--smt-dark)" }}>
-                            {item.name}
+                          <th scope="row" className="px-4 py-3.5 text-left sm:px-5">
+                            <Link
+                              href={book({ priceItem: item.name, price: item.price })}
+                              className="text-[15px] font-normal hover:underline"
+                              style={{ color: "var(--smt-dark)" }}
+                              aria-label={`Записаться: ${item.name}, ${item.price}`}
+                            >
+                              {item.name}
+                            </Link>
                           </th>
                           <td className="whitespace-nowrap px-4 py-3.5 text-right text-[15px] font-semibold tabular-nums sm:px-5" style={{ color: "var(--smt-dark)" }}>
                             {item.price}
@@ -35,6 +50,9 @@ export function PriceTable() {
               </div>
             ))}
           </div>
+          <Link href={book({ service: sec.title })} className="smt-btn smt-btn-ghost mt-5">
+            Записаться · {sec.title}
+          </Link>
         </div>
       ))}
     </div>

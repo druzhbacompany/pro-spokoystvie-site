@@ -1,17 +1,19 @@
 import { BookingForm } from "./BookingForm";
 
-/** SMT-style booking CTA section. Carries the site-wide #zayavka anchor. */
+/** SMT-style booking CTA section. Carries the site-wide #zayavka anchor + context. */
 export function Cta({
   title = "Записаться на приём",
   lead = "Оставьте номер — перезвоним и подберём удобное время. Конфиденциально, без постановки на учёт.",
   topic,
   doctor,
+  sourceBlock = "cta",
   alt = false,
 }: {
   title?: string;
   lead?: string;
   topic?: string;
   doctor?: string;
+  sourceBlock?: string;
   alt?: boolean;
 }) {
   return (
@@ -22,7 +24,7 @@ export function Cta({
             <h2 className="smt-h2">{title}</h2>
             <p className="smt-lead mt-3 smt-muted">{lead}</p>
           </div>
-          <BookingForm topic={topic} doctor={doctor} />
+          <BookingForm topic={topic} doctor={doctor} sourceBlock={sourceBlock} />
         </div>
       </div>
     </section>

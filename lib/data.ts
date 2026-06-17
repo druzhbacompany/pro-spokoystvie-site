@@ -33,9 +33,11 @@ export const CLINIC = {
 /** Unified primary navigation shared by all public-page headers/footers. */
 export const NAV = [
   { label: "Услуги", href: "/uslugi/" },
+  { label: "Программы", href: "/programmy/" },
   { label: "Врачи", href: "/vrachi/" },
   { label: "Цены", href: "/tseny/" },
   { label: "Документы", href: "/dokumenty/" },
+  { label: "О клинике", href: "/o-klinike/" },
   { label: "Контакты", href: "/kontakty/" },
 ] as const;
 
@@ -901,3 +903,23 @@ export const SERVICE_CATEGORIES = [
   "Поддержка и восстановление",
   "Неврология",
 ] as const;
+
+/* ─────────────────────────────────────────────────────────────────────────
+   PROGRAMS — комплексные программы (placeholder-level, без мед-гарантий).
+   Контент уточняется; используем элегантные плейсхолдеры.
+   ──────────────────────────────────────────────────────────────────────── */
+export type Program = {
+  slug: string;
+  title: string;
+  blurb: string;
+  forWhom: string;
+};
+
+export const PROGRAMS: Program[] = [
+  { slug: "rabota-s-trevogoy", title: "Программа работы с тревогой", blurb: "Описание программы готовится. Состав и длительность уточняются.", forWhom: "Для тех, кто живёт с постоянной тревогой и напряжением." },
+  { slug: "vosstanovlenie-sna", title: "Программа восстановления сна", blurb: "Описание программы готовится. Состав программы уточняется.", forWhom: "Для тех, кому трудно засыпать и высыпаться." },
+  { slug: "podderzhka-remissii", title: "Программа поддержки ремиссии", blurb: "Описание программы готовится. Состав и сопровождение уточняются.", forWhom: "Для поддержки устойчивого состояния и близких." },
+  { slug: "vosstanovlenie-posle-stressa", title: "Программа восстановления после стресса", blurb: "Описание программы готовится. Состав программы уточняется.", forWhom: "Для восстановления после перегрузки и выгорания." },
+];
+
+export const programBySlug = (slug: string) => PROGRAMS.find((p) => p.slug === slug);

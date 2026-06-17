@@ -41,13 +41,13 @@ export function SiteHeader({ active }: { active?: string }) {
           />
         </Link>
 
-        <nav aria-label="Основная навигация" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Основная навигация" className="hidden items-center gap-4 lg:flex xl:gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               aria-current={active === item.label ? "page" : undefined}
-              className="text-[15px] font-medium transition-colors hover:opacity-80"
+              className="text-[14px] font-medium transition-colors hover:opacity-80"
               style={{ color: active === item.label ? "var(--smt-blue)" : "var(--smt-dark)" }}
             >
               {item.label}
