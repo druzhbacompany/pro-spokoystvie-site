@@ -525,3 +525,59 @@
 }
 .theme-v2 .v2-input:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--v2-wave); }
 .theme-v2 .v2-wave-divider { color: var(--v2-wave); line-height: 0; }
+
+/* ============================================================
+   SMT-STYLE LAYER (real tokens from SMT audit 02_SMT_DESIGN_SYSTEM)
+   Scoped under .smt so it never affects legacy/V4 styles.
+   ============================================================ */
+.smt {
+  --smt-blue: #4895cd; --smt-blue-hover: #207ab3; --smt-dark: #00354b;
+  --smt-accent: #fe7239; --smt-green: #12533d;
+  --smt-bg: #ffffff; --smt-bg2: #f6f6f6; --smt-grey: #f4f6f9; --smt-border: #e6e6e6;
+  --smt-blue-bg: #dcecf9; --smt-muted: #809aa5; --smt-text: #2a3338;
+  --smt-radius: 15px; --smt-radius-md: 30px; --smt-radius-lg: 40px;
+  --smt-shadow: 0 10px 40px 0 #168dcd33; --smt-shadow-sm: 0 6px 14px #0000001f; --smt-shadow-md: 0 12px 24px #0f29401f;
+  --smt-container: 1200px;
+  font-family: var(--font-manrope), Manrope, system-ui, sans-serif;
+  color: var(--smt-text);
+  background: var(--smt-bg);
+}
+.smt-container { max-width: var(--smt-container); margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+.smt-section { padding-top: 50px; padding-bottom: 50px; }
+@media (min-width: 768px) { .smt-section { padding-top: 70px; padding-bottom: 70px; } }
+.smt-section-alt { background: var(--smt-bg2); }
+
+.smt-h1 { font-size: 30px; line-height: 1.2; font-weight: 700; color: var(--smt-dark); letter-spacing: -.01em; }
+.smt-h2 { font-size: 24px; line-height: 1.25; font-weight: 700; color: var(--smt-dark); }
+.smt-h3 { font-size: 20px; line-height: 1.3; font-weight: 600; color: var(--smt-dark); }
+.smt-eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--smt-blue); }
+.smt-lead { font-size: 18px; line-height: 1.5; color: var(--smt-text); }
+.smt-body { font-size: 16px; line-height: 1.5; color: var(--smt-text); }
+.smt-muted { color: var(--smt-muted); }
+@media (min-width: 768px) { .smt-h1 { font-size: 40px; } .smt-h2 { font-size: 30px; } }
+
+.smt-card { background: #fff; border: 1px solid var(--smt-border); border-radius: var(--smt-radius); box-shadow: var(--smt-shadow-sm); }
+.smt-card-pad { padding: 20px; }
+.smt-card-lg { border-radius: var(--smt-radius-md); }
+@media (hover: hover) { a.smt-card:hover, button.smt-card:hover, .smt-card.is-link:hover { transform: translateY(-2px); box-shadow: var(--smt-shadow-md); } }
+.smt-card { transition: transform .2s, box-shadow .2s; }
+
+.smt-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 20px; border-radius: var(--smt-radius); font-weight: 600; font-size: 15px; transition: background-color .2s, color .2s, border-color .2s, transform .15s; cursor: pointer; }
+.smt-btn-primary { background: var(--smt-blue); color: #fff; }
+.smt-btn-primary:hover { background: var(--smt-blue-hover); }
+.smt-btn-ghost { border: 1px solid var(--smt-border); color: var(--smt-dark); background: #fff; }
+.smt-btn-ghost:hover { background: var(--smt-grey); }
+.smt-btn-accent { background: var(--smt-accent); color: #fff; }
+.smt-btn:disabled { opacity: .65; cursor: default; }
+
+.smt-input { width: 100%; min-height: 48px; border: 1px solid var(--smt-border); border-radius: var(--smt-radius); padding: 0 14px; font-size: 16px; color: var(--smt-dark); background: #fff; }
+.smt-input:focus-visible { outline: none; border-color: var(--smt-blue); box-shadow: 0 0 0 3px var(--smt-blue-bg); }
+textarea.smt-input { padding: 12px 14px; min-height: 96px; }
+
+.smt-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; background: var(--smt-blue-bg); color: var(--smt-dark); }
+.smt-chip-outline { background: #fff; border: 1px solid var(--smt-border); color: var(--smt-muted); }
+
+.smt-link { color: var(--smt-blue); font-weight: 600; }
+.smt-link:hover { text-decoration: underline; }
+
+.smt-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; background: var(--smt-grey); border: 1px dashed var(--smt-border); border-radius: var(--smt-radius); color: var(--smt-muted); font-size: 14px; padding: 16px; }
