@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -12,7 +11,8 @@ import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
 import { TagChip } from "@/components/ui/TagChip";
 import { FinalCTA } from "@/components/blocks/FinalCTA";
-import { DOCUMENTS, CLINIC } from "@/lib/data";
+import { DocumentsGallery } from "@/components/blocks/DocumentsGallery";
+import { CLINIC } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Документы и лицензия клиники — «ПРО спокойствие» в Екатеринбурге",
@@ -123,59 +123,16 @@ export default function DocumentsPage() {
           </a>
         </Section>
 
-        {/* [3] Document cards with preview images */}
+        {/* [3] Document cards with in-page lightbox */}
         <Section id="dokumenty">
           <Reveal>
             <SectionHead
               eyebrow="Документы"
               title="Реальные сканы"
-              lead="Нажмите «Смотреть документ», чтобы открыть скан в полном размере в новой вкладке."
+              lead="Нажмите на документ, чтобы открыть скан в полном размере прямо на странице."
             />
           </Reveal>
-          <ul className="mt-10 grid gap-8 sm:grid-cols-2">
-            {DOCUMENTS.map((doc, i) => (
-              <Reveal key={doc.src} delay={(i % 2) * 70} as="li">
-                <div className="flex h-full flex-col overflow-hidden rounded-card border border-border bg-surface shadow-sm">
-                  <a
-                    href={doc.src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Открыть документ: ${doc.label}`}
-                    className="relative block aspect-[4/3] bg-bg-alt"
-                  >
-                    <Image
-                      src={doc.src}
-                      alt={doc.label}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 45vw"
-                      className="object-contain object-center p-2"
-                    />
-                  </a>
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="type-h4">{doc.label}</h3>
-                    <p className="type-body-sm mt-2 flex-1 text-text-secondary">{doc.desc}</p>
-                    <div className="mt-5 flex flex-wrap gap-3">
-                      <a
-                        href={doc.src}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex min-h-[44px] items-center gap-1.5 font-medium text-brand hover:underline"
-                      >
-                        Смотреть документ <Icon name="arrow" size={18} />
-                      </a>
-                      <a
-                        href={doc.src}
-                        download
-                        className="inline-flex min-h-[44px] items-center rounded-control border border-border px-4 font-medium text-text-primary hover:bg-bg-alt"
-                      >
-                        Скачать
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </ul>
+          <DocumentsGallery />
         </Section>
 
         {/* [4] FAQ */}

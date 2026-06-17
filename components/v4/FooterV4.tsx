@@ -1,14 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CLINIC } from "@/lib/data";
-
-const NAV = [
-  { label: "Услуги", href: "/uslugi/" },
-  { label: "Врачи", href: "/vrachi/" },
-  { label: "Цены", href: "/tseny/" },
-  { label: "Документы", href: "/dokumenty/" },
-  { label: "Контакты", href: "/kontakty/" },
-];
+import { CLINIC, NAV } from "@/lib/data";
 
 export function FooterV4() {
   return (

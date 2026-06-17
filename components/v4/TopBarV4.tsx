@@ -3,15 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { CLINIC } from "@/lib/data";
-
-const NAV = [
-  { label: "Услуги", href: "/uslugi/" },
-  { label: "Врачи", href: "/vrachi/" },
-  { label: "Цены", href: "/tseny/" },
-  { label: "Документы", href: "/dokumenty/" },
-  { label: "Контакты", href: "/kontakty/" },
-];
+import { CLINIC, NAV } from "@/lib/data";
 
 /** V4 TopBar — REAL donor logo (logo-trimmed.png, exact geometry), ghost CTA. */
 export function TopBarV4() {

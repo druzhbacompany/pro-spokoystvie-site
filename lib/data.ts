@@ -30,11 +30,12 @@ export const CLINIC = {
     "https://www.google.com/maps/search/?api=1&query=Екатеринбург+проспект+Космонавтов+101б",
 } as const;
 
+/** Unified primary navigation shared by all public-page headers/footers. */
 export const NAV = [
   { label: "Услуги", href: "/uslugi/" },
-  { label: "Как это проходит", href: "/#kak-prohodit" },
   { label: "Врачи", href: "/vrachi/" },
-  { label: "Вопросы", href: "/#voprosy" },
+  { label: "Цены", href: "/tseny/" },
+  { label: "Документы", href: "/dokumenty/" },
   { label: "Контакты", href: "/kontakty/" },
 ] as const;
 
