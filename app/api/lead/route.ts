@@ -19,6 +19,7 @@ type LeadPayload = {
   time?: string;
   doctor?: string;
   topic?: string;
+  direction?: string;
   consent?: boolean;
   company?: string; // honeypot
   // conversion context
@@ -62,6 +63,7 @@ export async function POST(request: Request) {
     time: body.time ?? null,
     doctor: body.doctor ?? null,
     topic: body.topic ?? null,
+    direction: body.direction ?? null,
     // conversion context
     pageUrl: body.pageUrl ?? null,
     pageTitle: body.pageTitle ?? null,
