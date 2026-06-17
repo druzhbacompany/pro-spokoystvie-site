@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
-import { CLINIC, TIME_SLOTS } from "@/lib/data";
+import { CLINIC, TIME_SLOTS, branchById } from "@/lib/data";
 
 /**
  * SMT-style booking form. Posts to /api/lead with full conversion context
@@ -27,31 +27,36 @@ export function BookingForm({
   const [done, setDone] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [ctx, setCtx] = useState<{ service?: string; doctor?: string; priceItem?: string; price?: string }>({
+  const [ctx, setCtx] = useState<{ service?: string; doctor?: string; priceItem?: string; price?: string; branch?: string; branchAddress?: string }>({
     service: topic,
     doctor,
     priceItem,
     price,
   });
 
-  // Fallback: read context from URL query (set by service/price card links).
+  // Fallback: read context from URL query (set by service/price/branch card links).
   useEffect(() => {
     const q = new URLSearchParams(window.location.search);
+    const branch = branchById(q.get("branch") ?? "");
     setCtx((prev) => ({
       service: prev.service ?? q.get("service") ?? undefined,
       doctor: prev.doctor ?? q.get("doctor") ?? undefined,
       priceItem: prev.priceItem ?? q.get("priceItem") ?? undefined,
       price: prev.price ?? q.get("price") ?? undefined,
+      branch: branch?.title,
+      branchAddress: branch?.address,
     }));
   }, []);
 
-  const contextLine = ctx.doctor
-    ? `Вы выбрали врача: ${ctx.doctor}`
-    : ctx.priceItem
-      ? `Вы выбрали: ${ctx.priceItem}${ctx.price ? ` · ${ctx.price}` : ""}`
-      : ctx.service
-        ? `Вы выбрали: ${ctx.service}`
-        : null;
+  const contextLine = ctx.branch
+    ? `Вы выбрали филиал: ${ctx.branchAddress ?? ctx.branch}`
+    : ctx.doctor
+      ? `Вы выбрали врача: ${ctx.doctor}`
+      : ctx.priceItem
+        ? `Вы выбрали: ${ctx.priceItem}${ctx.price ? ` · ${ctx.price}` : ""}`
+        : ctx.service
+          ? `Вы выбрали: ${ctx.service}`
+          : null;
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -76,6 +81,8 @@ export function BookingForm({
           doctor: ctx.doctor ?? null,
           priceItem: ctx.priceItem ?? null,
           price: ctx.price ?? null,
+          branch: ctx.branch ?? null,
+          branchAddress: ctx.branchAddress ?? null,
           sourceBlock: sourceBlock ?? null,
           ctaLabel,
           pageUrl: window.location.pathname + window.location.search,

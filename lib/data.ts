@@ -923,3 +923,60 @@ export const PROGRAMS: Program[] = [
 ];
 
 export const programBySlug = (slug: string) => PROGRAMS.find((p) => p.slug === slug);
+
+/* ─────────────────────────────────────────────────────────────────────────
+   BRANCHES — филиалы клиники. Контактные данные общие для всех филиалов.
+   Координаты НЕ выдумываем: где нет verified embed — ссылка-поиск по адресу.
+   ──────────────────────────────────────────────────────────────────────── */
+export type Branch = {
+  id: string;
+  title: string;
+  address: string;
+  phone: string;
+  phoneHref: string;
+  email: string;
+  emailHref: string;
+  telegram: string;
+  telegramHref: string;
+  hoursWeek: string;
+  hoursWeekend: string;
+  yandexMaps: string;
+  googleMaps: string;
+  status: "active";
+  note: string;
+};
+
+const mapSearch = (q: string) => ({
+  yandex: `https://yandex.ru/maps/?text=${encodeURIComponent(q)}`,
+  google: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`,
+});
+
+export const BRANCHES: Branch[] = [
+  {
+    id: "kosmonavtov",
+    title: "Филиал на Космонавтов",
+    address: "г. Екатеринбург, пр-кт Космонавтов, 101Б",
+    phone: CLINIC.phone, phoneHref: CLINIC.phoneHref,
+    email: CLINIC.email, emailHref: CLINIC.emailHref,
+    telegram: CLINIC.telegram, telegramHref: CLINIC.telegramHref,
+    hoursWeek: CLINIC.hoursWeek, hoursWeekend: CLINIC.hoursWeekend,
+    yandexMaps: CLINIC.yandexMaps, googleMaps: CLINIC.googleMaps,
+    status: "active",
+    note: "Основной адрес клиники",
+  },
+  {
+    id: "gromova",
+    title: "Филиал на Громова",
+    address: "г. Екатеринбург, ул. Громова, 30",
+    phone: CLINIC.phone, phoneHref: CLINIC.phoneHref,
+    email: CLINIC.email, emailHref: CLINIC.emailHref,
+    telegram: CLINIC.telegram, telegramHref: CLINIC.telegramHref,
+    hoursWeek: CLINIC.hoursWeek, hoursWeekend: CLINIC.hoursWeekend,
+    yandexMaps: mapSearch("Екатеринбург, улица Громова, 30").yandex,
+    googleMaps: mapSearch("Екатеринбург, улица Громова, 30").google,
+    status: "active",
+    note: "Контактные данные общие для всех филиалов",
+  },
+];
+
+export const branchById = (id: string) => BRANCHES.find((b) => b.id === id);

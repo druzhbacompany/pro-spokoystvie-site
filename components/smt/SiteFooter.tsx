@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CLINIC, NAV } from "@/lib/data";
+import { CLINIC, NAV, BRANCHES } from "@/lib/data";
 
 /** SMT-style footer. PRO contacts + legal + unified nav. */
 export function SiteFooter() {
@@ -33,8 +33,15 @@ export function SiteFooter() {
             <li><a href={CLINIC.phoneHref} className="font-semibold hover:opacity-80" style={{ color: "#e7eef3" }}>{CLINIC.phone}</a></li>
             <li><a href={CLINIC.telegramHref} target="_blank" rel="noopener noreferrer" className="hover:opacity-80">Telegram {CLINIC.telegram}</a></li>
             <li><a href={CLINIC.emailHref} className="hover:opacity-80">{CLINIC.email}</a></li>
-            <li>{CLINIC.address}</li>
             <li>{CLINIC.hoursWeek} · {CLINIC.hoursWeekend}</li>
+          </ul>
+          <p className="smt-eyebrow mt-6" style={{ color: "#6f9fbe" }}>Филиалы</p>
+          <ul className="mt-3 space-y-2 text-[15px]" style={{ color: "#c7d4dd" }}>
+            {BRANCHES.map((b) => (
+              <li key={b.id}>
+                <Link href={`/kontakty/?branch=${b.id}#zayavka`} className="hover:opacity-80">{b.address}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

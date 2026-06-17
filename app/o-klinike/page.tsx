@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/smt/Breadcrumbs";
 import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { PhotoPlaceholder, TextPlaceholder } from "@/components/smt/Placeholder";
+import { BranchesSection } from "@/components/smt/Branches";
 import { CLINIC, bySlug, DOCTORS } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -102,6 +103,9 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        {/* Branches */}
+        <BranchesSection title="Филиалы клиники" />
 
         {/* License + documents crosslink */}
         <section className="smt-section smt-section-alt">

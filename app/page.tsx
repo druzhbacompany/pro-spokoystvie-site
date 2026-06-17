@@ -6,6 +6,7 @@ import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { ServiceCard } from "@/components/smt/ServiceCard";
 import { PhotoPlaceholder } from "@/components/smt/Placeholder";
+import { BranchesSection } from "@/components/smt/Branches";
 import { DOCTORS, SERVICES, SERVICE_CATEGORIES, PROGRAMS, CLINIC } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -120,23 +121,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* [6] Contacts preview */}
+        {/* [6] Branches (SMT-like clinic locations) */}
+        <BranchesSection title="Филиалы клиники" alt />
         <section className="smt-section">
-          <div className="smt-container grid gap-8 md:grid-cols-2">
+          <div className="smt-container flex flex-wrap items-center justify-between gap-4">
             <div>
-              <p className="smt-eyebrow">Контакты</p>
-              <h2 className="smt-h2 mt-2">Как нас найти</h2>
-              <ul className="mt-5 space-y-2 smt-body">
-                <li>{CLINIC.address}</li>
-                <li><a href={CLINIC.phoneHref} className="smt-link">{CLINIC.phone}</a></li>
-                <li><a href={CLINIC.telegramHref} target="_blank" rel="noopener noreferrer" className="smt-link">Telegram {CLINIC.telegram}</a></li>
-                <li className="smt-muted">{CLINIC.hoursWeek} · {CLINIC.hoursWeekend}</li>
-              </ul>
-              <Link href="/kontakty/" className="smt-link mt-6 inline-flex">Подробные контакты →</Link>
+              <h2 className="smt-h2">Единый контакт для всех филиалов</h2>
+              <p className="mt-2 smt-body smt-muted">
+                <a href={CLINIC.phoneHref} className="smt-link">{CLINIC.phone}</a> · <a href={CLINIC.telegramHref} target="_blank" rel="noopener noreferrer" className="smt-link">Telegram {CLINIC.telegram}</a> · {CLINIC.hoursWeek} · {CLINIC.hoursWeekend}
+              </p>
             </div>
-            <a href={CLINIC.yandexMaps} target="_blank" rel="noopener noreferrer" className="block">
-              <PhotoPlaceholder ratio="4/3" label="Карта проезда — открыть в Яндекс.Картах" />
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/kontakty/" className="smt-btn smt-btn-ghost">Посмотреть контакты</Link>
+              <Link href="#zayavka" className="smt-btn smt-btn-primary">Записаться</Link>
+            </div>
           </div>
         </section>
 

@@ -28,6 +28,8 @@ type LeadPayload = {
   priceItem?: string;
   price?: string;
   ctaLabel?: string;
+  branch?: string;
+  branchAddress?: string;
 };
 
 export async function POST(request: Request) {
@@ -67,6 +69,8 @@ export async function POST(request: Request) {
     priceItem: body.priceItem ?? null,
     price: body.price ?? null,
     ctaLabel: body.ctaLabel ?? null,
+    branch: body.branch ?? null,
+    branchAddress: body.branchAddress ?? null,
     receivedAt: new Date().toISOString(),
   });
 
