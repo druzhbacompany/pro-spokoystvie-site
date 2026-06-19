@@ -49,6 +49,9 @@ export default function PricesPage() {
                 <li>· Прайс не является публичной офертой. Запись бесплатна и ни к чему не обязывает.</li>
               </ul>
               <p className="mt-4 text-[14px] smt-muted">Оплата: наличные и банковские карты. Телефон: <a href={CLINIC.phoneHref} className="smt-link">{CLINIC.phone}</a>.</p>
+              <p className="mt-4 text-[15px] font-semibold" style={{ color: "var(--smt-dark)" }}>
+                Имеются противопоказания. Необходима консультация специалиста.
+              </p>
             </div>
           </div>
         </section>

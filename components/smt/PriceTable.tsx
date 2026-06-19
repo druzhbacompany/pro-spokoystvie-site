@@ -1,8 +1,22 @@
 import Link from "next/link";
-import { PRICELIST } from "@/lib/data";
+import { PRICELIST, type PriceSection } from "@/lib/data";
+import { LegalNotice } from "./LegalNotice";
 
 const book = (params: Record<string, string>) =>
   `/kontakty/?${new URLSearchParams(params).toString()}#zayavka`;
+
+/**
+ * Sensitive sections (зависимости / IV-терапия / детокс / кодирование …) get a
+ * remission-only legal notice. Detected by content, not hardcoded ids, so it
+ * stays correct if the approved price list changes.
+ */
+const SENSITIVE = /кодиров|эспераль|торпедо|снятие кода|зависим|детокс|капельниц|iv[\s-]?терап/i;
+function isSensitive(sec: PriceSection): boolean {
+  if (SENSITIVE.test(sec.title)) return true;
+  return sec.groups.some(
+    (g) => SENSITIVE.test(g.title) || g.items.some((it) => SENSITIVE.test(it.name)),
+  );
+}
 
 /**
  * SMT-style price table. Each row name links to the form prefilled with the
@@ -50,6 +64,7 @@ export function PriceTable() {
               </div>
             ))}
           </div>
+          {isSensitive(sec) ? <LegalNotice /> : null}
           <Link href={book({ service: sec.title })} className="smt-btn smt-btn-ghost mt-5">
             Записаться · {sec.title}
           </Link>
