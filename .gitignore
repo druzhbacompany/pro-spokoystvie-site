@@ -19,5 +19,10 @@ tsconfig.tsbuildinfo
 
 # internal project materials
 design-board/
-docs/
 external/
+
+# docs/ stays internal — track ONLY the canonical capsule V2
+docs/*
+!docs/project-memory/
+docs/project-memory/*
+!docs/project-memory/MASTER_CAPSULE_V2.md
