@@ -21,6 +21,7 @@ export function DoctorCard({ d }: { d: Doctor }) {
       ) : null}
       <h3 className="smt-h3 mt-3">{d.name}</h3>
       <p className="mt-1 text-[14px] smt-muted">{d.specialty}</p>
+      {d.experience ? <p className="mt-1 text-[13px]" style={{ color: "var(--smt-blue)" }}>{d.experience}</p> : null}
       <div className="mt-3 flex flex-wrap gap-2">
         {d.helps.slice(0, 3).map((h) => (
           <span key={h} className="smt-chip">{h}</span>

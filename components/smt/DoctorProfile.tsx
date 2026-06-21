@@ -41,7 +41,7 @@ export function DoctorProfile({ doctor }: { doctor: Doctor }) {
               <dl className="mt-5 grid max-w-md grid-cols-2 gap-3">
                 <div className="smt-card smt-card-pad !p-4">
                   <dt className="text-[13px] smt-muted">Стаж</dt>
-                  <dd className="text-[15px]" style={{ color: "var(--smt-dark)" }}>Данные уточняются</dd>
+                  <dd className="text-[15px]" style={{ color: "var(--smt-dark)" }}>{doctor.experience ?? "Данные уточняются"}</dd>
                 </div>
                 <div className="smt-card smt-card-pad !p-4">
                   <dt className="text-[13px] smt-muted">Приём</dt>
@@ -98,32 +98,58 @@ export function DoctorProfile({ doctor }: { doctor: Doctor }) {
           </div>
         </section>
 
-        {/* Approach / bio (clinic-voice, honest placeholder for personal text) */}
+        {/* Approach / bio */}
         <section className="smt-section">
           <div className="smt-container max-w-[68ch]">
             <h2 className="smt-h2">Подход к работе</h2>
             <div className="smt-body mt-4 space-y-4 smt-muted">
+              {doctor.about ? <p style={{ color: "var(--smt-text)" }}>{doctor.about}</p> : null}
               <p>Первая встреча — спокойный диалог, а не экзамен. Специалист сначала разбирается в ситуации, без оценок и спешки. В клинике работают методами с доказанной эффективностью.</p>
             </div>
-            <p className="mt-4 text-[13px] smt-muted">Личный рассказ специалиста о подходе — информация готовится.</p>
+            {doctor.methods?.length ? (
+              <div className="mt-5">
+                <p className="text-[14px] smt-muted">Методы и форматы:</p>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {doctor.methods.map((m) => (<li key={m}><span className="smt-chip">{m}</span></li>))}
+                </ul>
+              </div>
+            ) : (
+              <p className="mt-4 text-[13px] smt-muted">Личный рассказ специалиста о подходе — информация готовится.</p>
+            )}
           </div>
         </section>
 
-        {/* Education / credentials — honest placeholders */}
+        {/* Education / certificates */}
         <section className="smt-section smt-section-alt">
           <div className="smt-container grid gap-8 md:grid-cols-2">
             <div>
               <h2 className="smt-h2">Образование и квалификация</h2>
-              <div className="mt-4"><TextPlaceholder label="Данные уточняются" /></div>
+              {doctor.education?.length ? (
+                <ul className="mt-4 space-y-3">
+                  {doctor.education.map((e) => (
+                    <li key={e} className="flex gap-3 smt-body smt-muted">
+                      <span style={{ color: "var(--smt-blue)" }}>•</span>{e}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="mt-4"><TextPlaceholder label="Данные уточняются" /></div>
+              )}
               <p className="mt-3 text-[14px] smt-muted">Квалификация подтверждается лицензией клиники Минздрава Свердловской области.</p>
             </div>
             <div>
-              <h2 className="smt-h2">Награды и отзывы</h2>
-              <div className="mt-4 grid gap-3">
-                <TextPlaceholder label="Награды — будет добавлено после согласования" />
-                <TextPlaceholder label="Отзывы — информация готовится" />
-                <TextPlaceholder label="Видео-визитка — фото готовится" />
-              </div>
+              <h2 className="smt-h2">Сертификаты и курсы</h2>
+              {doctor.certificates?.length ? (
+                <ul className="mt-4 space-y-3">
+                  {doctor.certificates.map((c) => (
+                    <li key={c} className="flex gap-3 smt-body smt-muted">
+                      <span style={{ color: "var(--smt-blue)" }}>•</span>{c}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="mt-4"><TextPlaceholder label="Информация готовится" /></div>
+              )}
             </div>
           </div>
         </section>
