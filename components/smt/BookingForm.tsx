@@ -102,6 +102,7 @@ export function BookingForm({
     const phone = (d.get("phone") as string)?.trim();
     if (!name || !phone) return setError("Укажите имя и телефон — это всё, что нужно.");
     if (!d.get("consent")) return setError("Отметьте согласие на обработку персональных данных.");
+    if (!d.get("consentSpecial")) return setError("Отметьте согласие на обработку сведений о состоянии здоровья.");
     setError(null);
     setLoading(true);
     try {
@@ -124,6 +125,8 @@ export function BookingForm({
           pageUrl: window.location.pathname + window.location.search,
           pageTitle: document.title,
           consent: true,
+          consentSpecial: true,
+          consentMarketing: !!d.get("consentMarketing"),
           company: (d.get("company") as string) || "",
         }),
       });
@@ -198,14 +201,40 @@ export function BookingForm({
             <input id="smt-phone" name="phone" type="tel" inputMode="tel" autoComplete="tel" placeholder="+7 (___) ___-__-__" className="smt-input" />
           </div>
         </div>
-        <label className="flex cursor-pointer items-start gap-3">
-          <input type="checkbox" name="consent" className="mt-1 h-5 w-5 flex-none" style={{ accentColor: "var(--smt-blue)" }} />
-          <span className="smt-body smt-muted">Согласен на обработку персональных данных для записи на приём.</span>
-        </label>
+        <div className="flex flex-col gap-3">
+          <label className="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" name="consent" required className="mt-1 h-5 w-5 flex-none" style={{ accentColor: "var(--smt-blue)" }} />
+            <span className="text-[14px] smt-muted">
+              Я согласен(на) на обработку персональных данных для записи на приём и ознакомлен(а) с{" "}
+              <Link href="/privacy" className="smt-link" target="_blank" rel="noopener noreferrer">Политикой в отношении обработки персональных данных</Link>{" "}
+              и{" "}
+              <Link href="/user-agreement" className="smt-link" target="_blank" rel="noopener noreferrer">Пользовательским соглашением</Link>.{" "}
+              <span style={{ color: "#b91c1c" }}>*</span>
+            </span>
+          </label>
+          <label className="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" name="consentSpecial" required className="mt-1 h-5 w-5 flex-none" style={{ accentColor: "var(--smt-blue)" }} />
+            <span className="text-[14px] smt-muted">
+              Я согласен(на) на обработку{" "}
+              <Link href="/special-consent" className="smt-link" target="_blank" rel="noopener noreferrer">сведений о состоянии здоровья</Link>{" "}
+              (специальная категория персональных данных).{" "}
+              <span style={{ color: "#b91c1c" }}>*</span>
+            </span>
+          </label>
+          <label className="flex cursor-pointer items-start gap-3">
+            <input type="checkbox" name="consentMarketing" className="mt-1 h-5 w-5 flex-none" style={{ accentColor: "var(--smt-blue)" }} />
+            <span className="text-[14px] smt-muted">
+              Хочу получать новости и специальные предложения МЦ «ПРО Спокойствие».
+            </span>
+          </label>
+        </div>
         {error ? <p className="smt-body" style={{ color: "#b91c1c" }} role="alert">{error}</p> : null}
         <button type="submit" disabled={loading} className="smt-btn smt-btn-primary w-full">
           {loading ? "Отправляем…" : ctaLabel}
         </button>
+        <p className="text-center text-[13px] smt-muted">
+          Нажимая «{ctaLabel}», вы соглашаетесь на обработку персональных данных. Данные передаются по защищённому каналу и хранятся на серверах в Российской Федерации.
+        </p>
         <p className="text-center text-[13px] smt-muted">
           Или позвоните: {CLINIC.phone} · {CLINIC.hoursWeek} · {CLINIC.hoursWeekend}
         </p>

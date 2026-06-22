@@ -52,7 +52,13 @@ export function SiteFooter() {
       <div className="smt-footer-bottom">
         <div className="smt-container smt-footer-bottom-inner">
           <p>© 2026 {CLINIC.legalName}. Все права защищены.</p>
-          <p>Политика конфиденциальности · Согласие на обработку ПД</p>
+          <nav aria-label="Правовые документы" className="flex flex-wrap gap-x-4 gap-y-1">
+            <Link href="/privacy" className="hover:underline">Политика конфиденциальности</Link>
+            <Link href="/personal-data-consent" className="hover:underline">Согласие на обработку ПД</Link>
+            <Link href="/user-agreement" className="hover:underline">Пользовательское соглашение</Link>
+            <Link href="/cookies" className="hover:underline">Cookie</Link>
+            <Link href="/legal" className="hover:underline">Сведения об МО</Link>
+          </nav>
         </div>
       </div>
     </footer>

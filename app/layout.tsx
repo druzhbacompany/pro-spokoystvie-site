@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Lora, Onest, Manrope } from "next/font/google";
 import "./globals.css";
 import { CLINIC } from "@/lib/data";
+import { CookieBanner } from "@/components/smt/CookieBanner";
 
 const lora = Lora({
   subsets: ["latin", "cyrillic"],
@@ -98,6 +99,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

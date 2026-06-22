@@ -54,9 +54,19 @@ export default function DocumentsPage() {
             <a href={CLINIC.licenseCheckUrl} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-primary mt-6">
               Проверить лицензию в Росздравнадзоре
             </a>
-            <p className="mt-4 text-[14px] smt-muted">
-              Договор оферты и согласие на обработку ПД предоставляются на приёме. <Link href="/kontakty/" className="smt-link">Контакты →</Link>
-            </p>
+            <div className="mt-6">
+              <p className="smt-body smt-muted mb-3">Правовые документы клиники опубликованы онлайн:</p>
+              <ul className="flex flex-col gap-2 text-[15px]">
+                <li><Link href="/privacy" className="smt-link">Политика в отношении обработки персональных данных</Link></li>
+                <li><Link href="/personal-data-consent" className="smt-link">Согласие на обработку персональных данных</Link></li>
+                <li><Link href="/special-consent" className="smt-link">Согласие на обработку специальных категорий ПДн</Link></li>
+                <li><Link href="/cookies" className="smt-link">Политика использования файлов cookie</Link></li>
+                <li><Link href="/user-agreement" className="smt-link">Пользовательское соглашение</Link></li>
+                <li><Link href="/legal" className="smt-link">Сведения о медицинской организации</Link></li>
+                <li><Link href="/license" className="smt-link">Сведения о лицензии</Link></li>
+                <li><Link href="/controlling-authorities" className="smt-link">Контролирующие органы</Link></li>
+              </ul>
+            </div>
           </div>
         </section>
 
