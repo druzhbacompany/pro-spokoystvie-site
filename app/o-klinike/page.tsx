@@ -5,7 +5,6 @@ import { SiteHeader } from "@/components/smt/SiteHeader";
 import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Breadcrumbs } from "@/components/smt/Breadcrumbs";
 import { Cta } from "@/components/smt/Cta";
-import { DoctorCard } from "@/components/smt/DoctorCard";
 import { TextPlaceholder } from "@/components/smt/Placeholder";
 import { BranchesSection } from "@/components/smt/Branches";
 import { CLINIC, bySlug, DOCTORS } from "@/lib/data";
@@ -40,22 +39,39 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div
-                className="overflow-hidden rounded-[18px] border bg-white p-4 shadow-sm sm:p-6"
-                style={{ borderColor: "var(--smt-border)" }}
-              >
-                <Image
-                  src="/assets/clinic/about-banner-safe.jpeg"
-                  alt="Медицинский центр «ПРО спокойствие и здоровье»"
-                  width={1080}
-                  height={850}
-                  priority
-                  sizes="(max-width: 768px) 100vw, 48vw"
-                  className="h-auto w-full rounded-[10px]"
-                />
+              <div className="mx-auto w-full max-w-[380px]">
+                <div
+                  className="overflow-hidden rounded-[18px] border bg-white p-3 shadow-sm sm:p-4"
+                  style={{ borderColor: "var(--smt-border)" }}
+                >
+                  <Image
+                    src="/assets/clinic/about-banner-original.jpeg"
+                    alt="Медицинский центр «ПРО спокойствие и здоровье»: направления помощи и приём специалистов"
+                    width={1080}
+                    height={1920}
+                    priority
+                    sizes="(max-width: 768px) 90vw, 380px"
+                    className="h-auto w-full rounded-[10px]"
+                  />
+                </div>
+                <p className="mt-3 text-center text-[13px] smt-muted">
+                  Медицинский центр «ПРО спокойствие и здоровье», Екатеринбург
+                </p>
               </div>
-              <p className="mt-3 text-center text-[13px] smt-muted">
-                Медицинский центр «ПРО спокойствие и здоровье», Екатеринбург
+            </div>
+          </div>
+
+          {/* Legal notice — calm SMT-style info block */}
+          <div className="smt-container mt-8">
+            <div
+              className="flex items-start gap-3 rounded-[12px] border bg-white px-4 py-3.5"
+              style={{ borderColor: "var(--smt-border)" }}
+            >
+              <span className="mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full text-[12px] font-semibold" style={{ background: "var(--smt-blue-bg)", color: "var(--smt-blue)" }} aria-hidden>
+                i
+              </span>
+              <p className="text-[12.5px] leading-relaxed smt-muted">
+                Услуги оказываются при наличии медицинских показаний, после консультации специалиста и в рамках действующей лицензии. Поддержка при зависимом поведении и восстановительные процедуры проводятся вне острого состояния, в составе индивидуального плана помощи. Имеются противопоказания, необходима консультация специалиста.
               </p>
             </div>
           </div>
@@ -85,16 +101,35 @@ export default function AboutPage() {
             <div className="smt-container">
               <p className="smt-eyebrow">Медицинское руководство</p>
               <h2 className="smt-h2 mt-2">Главный врач</h2>
-              <div className="mt-6 grid gap-6 md:grid-cols-3">
-                <div className="md:col-span-1"><DoctorCard d={chief} /></div>
-                <div className="md:col-span-2 smt-card smt-card-pad md:!p-7">
-                  <p className="smt-body smt-muted">
-                    Стандарт помощи в клинике задаёт главный врач — {chief.shortName}. Он отвечает за то, чтобы каждый специалист работал бережно, без давления и осуждения, минимально достаточными средствами.
+              <div className="mt-6 smt-card flex flex-col overflow-hidden md:flex-row">
+                {/* Photo */}
+                <div className="relative h-80 w-full flex-none sm:h-96 md:h-auto md:w-[300px]" style={{ background: "var(--smt-grey)" }}>
+                  {chief.photo ? (
+                    <Image
+                      src={chief.photo}
+                      alt={`${chief.name}, ${chief.specialty}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 300px"
+                      className="object-cover object-top"
+                    />
+                  ) : null}
+                </div>
+                {/* Text */}
+                <div className="flex flex-1 flex-col p-6 md:p-8">
+                  <h3 className="smt-h3">{chief.name}</h3>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="smt-chip" style={{ background: "var(--smt-blue)", color: "#fff" }}>Главный врач</span>
+                    <span className="smt-chip">Врач-психиатр, психотерапевт</span>
+                    <span className="smt-chip">11 лет практики</span>
+                    <span className="smt-chip">Более 1 000 консультаций</span>
+                  </div>
+                  <p className="mt-5 smt-body smt-muted">
+                    Романовский Владимир Олегович отвечает за медицинский стандарт клиники и координацию помощи между специалистами. В работе делает акцент на спокойной, бережной и понятной коммуникации с пациентом.
                   </p>
-                  <blockquote className="mt-4 border-l-2 pl-4 italic smt-body" style={{ borderColor: "var(--smt-blue)", color: "var(--smt-dark)" }}>
+                  <blockquote className="mt-5 border-l-2 pl-4 italic smt-body" style={{ borderColor: "var(--smt-blue)", color: "var(--smt-dark)" }}>
                     «Моя задача — чтобы человек ушёл от нас спокойнее, чем пришёл.»
                   </blockquote>
-                  <Link href="/vrachi/romanovsky-vo/" className="smt-link mt-4 inline-flex">Подробнее о главном враче →</Link>
+                  <Link href="/vrachi/romanovsky-vo/" className="smt-link mt-auto inline-flex pt-5">Подробнее о главном враче →</Link>
                 </div>
               </div>
             </div>
