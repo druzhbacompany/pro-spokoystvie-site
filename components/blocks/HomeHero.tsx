@@ -45,7 +45,7 @@ export function HomeHero() {
         <div className="relative hidden md:block">
           <div className="relative aspect-[4/5] overflow-hidden rounded-media shadow-md">
             <Image
-              src="/assets/clinic/interior-1.jpg"
+              src="/assets/clinic/interior-1.png"
               alt="Интерьер клиники «ПРО спокойствие»"
               fill
               priority

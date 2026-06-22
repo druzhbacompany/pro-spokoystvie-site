@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/smt/SiteHeader";
 import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { ServiceCard } from "@/components/smt/ServiceCard";
-import { PhotoPlaceholder } from "@/components/smt/Placeholder";
 import { BranchesSection } from "@/components/smt/Branches";
 import { DOCTORS, SERVICES, SERVICE_CATEGORIES, PROGRAMS, CLINIC } from "@/lib/data";
 
@@ -39,8 +39,15 @@ export default function HomePage() {
                 <a href={CLINIC.phoneHref} className="smt-btn smt-btn-ghost">{CLINIC.phone}</a>
               </div>
             </div>
-            <div className="relative">
-              <PhotoPlaceholder ratio="4/3" label="Фото клиники готовится" />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[15px]">
+              <Image
+                src="/assets/clinic/interior-1.png"
+                alt="Интерьер клиники «ПРО спокойствие»"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>
