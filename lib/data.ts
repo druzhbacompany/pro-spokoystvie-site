@@ -1475,6 +1475,8 @@ export type BranchPhoto = { src: string; alt: string };
 
 export type Branch = {
   id: string;
+  /** URL-slug for /filialy/[slug]. */
+  slug: string;
   title: string;
   address: string;
   phone: string;
@@ -1487,8 +1489,16 @@ export type Branch = {
   hoursWeekend: string;
   yandexMaps: string;
   googleMaps: string;
+  /** Routing link to "build a route" in Yandex.Maps. */
+  routeUrl: string;
+  /** Embeddable Yandex map-widget src for in-page iframe. */
+  mapEmbedUrl: string;
   status: "active";
   note: string;
+  /** Short branch description for the detail page. */
+  description?: string;
+  /** Landmarks / "how to get there" bullet list. */
+  howToFind?: string[];
   gallery?: BranchPhoto[];
 };
 
@@ -1497,9 +1507,16 @@ const mapSearch = (q: string) => ({
   google: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`,
 });
 
+const mapEmbed = (q: string) =>
+  `https://yandex.ru/map-widget/v1/?text=${encodeURIComponent(q)}&z=17`;
+
+const mapRoute = (address: string) =>
+  `https://yandex.ru/maps/?mode=routes&rtext=~${encodeURIComponent(address)}`;
+
 export const BRANCHES: Branch[] = [
   {
     id: "kosmonavtov",
+    slug: "kosmonavtov",
     title: "Филиал на Космонавтов",
     address: "г. Екатеринбург, пр-кт Космонавтов, 101Б",
     phone: CLINIC.phone, phoneHref: CLINIC.phoneHref,
@@ -1507,8 +1524,17 @@ export const BRANCHES: Branch[] = [
     telegram: CLINIC.telegram, telegramHref: CLINIC.telegramHref,
     hoursWeek: CLINIC.hoursWeek, hoursWeekend: CLINIC.hoursWeekend,
     yandexMaps: CLINIC.yandexMaps, googleMaps: CLINIC.googleMaps,
+    routeUrl: mapRoute("г. Екатеринбург, пр-кт Космонавтов, 101Б"),
+    mapEmbedUrl: mapEmbed("Екатеринбург, проспект Космонавтов, 101Б"),
     status: "active",
     note: "Основной адрес клиники",
+    description:
+      "Основной адрес клиники «ПРО спокойствие». Здесь ведут амбулаторные приёмы психиатр, психотерапевт, психолог и невролог, работает процедурный кабинет. Спокойная навигация внутри филиала: вас встретят на ресепшене и проводят к кабинету.",
+    howToFind: [
+      "Проспект Космонавтов, 101Б — ориентир рядом с остановками общественного транспорта.",
+      "Вход со стороны проспекта; на ресепшене подскажут, как пройти к нужному кабинету.",
+      "Если вы на машине — постройте маршрут по кнопке ниже, рядом есть места для парковки.",
+    ],
     gallery: [
       { src: "/assets/clinic/kosmonavtov/reception-2.jpg",      alt: "Ресепшн клиники «ПРО спокойствие» на Космонавтов" },
       { src: "/assets/clinic/kosmonavtov/hall-2.jpg",           alt: "Холл клиники «ПРО спокойствие» на Космонавтов" },
@@ -1520,6 +1546,7 @@ export const BRANCHES: Branch[] = [
   },
   {
     id: "gromova",
+    slug: "gromova",
     title: "Филиал на Громова",
     address: "г. Екатеринбург, ул. Громова, 30",
     phone: CLINIC.phone, phoneHref: CLINIC.phoneHref,
@@ -1528,9 +1555,14 @@ export const BRANCHES: Branch[] = [
     hoursWeek: CLINIC.hoursWeek, hoursWeekend: CLINIC.hoursWeekend,
     yandexMaps: mapSearch("Екатеринбург, улица Громова, 30").yandex,
     googleMaps: mapSearch("Екатеринбург, улица Громова, 30").google,
+    routeUrl: mapRoute("г. Екатеринбург, ул. Громова, 30"),
+    mapEmbedUrl: mapEmbed("Екатеринбург, улица Громова, 30"),
     status: "active",
     note: "Контактные данные общие для всех филиалов",
+    description:
+      "Контактные данные, телефон и запись общие для всех филиалов клиники «ПРО спокойствие». Подробности работы филиала на Громова уточняются — оставьте заявку, и мы подберём удобное время и адрес приёма.",
   },
 ];
 
 export const branchById = (id: string) => BRANCHES.find((b) => b.id === id);
+export const branchBySlug = (slug: string) => BRANCHES.find((b) => b.slug === slug);

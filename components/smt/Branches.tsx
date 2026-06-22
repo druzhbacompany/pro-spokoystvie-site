@@ -1,14 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 import { BRANCHES, type Branch } from "@/lib/data";
 
-const routeUrl = (address: string) =>
-  `https://yandex.ru/maps/?mode=routes&rtext=~${encodeURIComponent(address)}`;
-
-/** SMT-style branch card: address, hours, phone, route buttons, booking with branch context. */
+/**
+ * SMT-style branch card: concise + clickable. The whole card links to the
+ * branch detail page via a stretched link; phone / route / booking remain
+ * independently clickable (relative z-10).
+ */
 export function BranchCard({ b }: { b: Branch }) {
   return (
-    <div className="smt-card smt-card-pad md:!p-7 flex h-full flex-col">
+    <div className="smt-card smt-card-pad md:!p-7 relative flex h-full flex-col">
       <div className="flex items-start gap-3">
         <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full" style={{ background: "var(--smt-blue-bg)", color: "var(--smt-blue)" }}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -16,42 +16,28 @@ export function BranchCard({ b }: { b: Branch }) {
           </svg>
         </span>
         <div>
-          <h3 className="smt-h3">{b.title}</h3>
+          <h3 className="smt-h3">
+            <Link
+              href={`/filialy/${b.slug}/`}
+              className="before:absolute before:inset-0 before:content-['']"
+              style={{ color: "inherit" }}
+            >
+              {b.title}
+            </Link>
+          </h3>
           <p className="mt-1 smt-body" style={{ color: "var(--smt-dark)" }}>{b.address}</p>
         </div>
       </div>
-      <ul className="mt-4 space-y-1.5 text-[14px] smt-muted">
+      <ul className="relative z-10 mt-4 w-fit space-y-1.5 text-[14px] smt-muted">
         <li>{b.hoursWeek} · {b.hoursWeekend}</li>
         <li><a href={b.phoneHref} className="smt-link">{b.phone}</a></li>
         <li>{b.note}</li>
       </ul>
-      <div className="mt-5 flex flex-1 flex-wrap items-end gap-3">
+      <div className="relative z-10 mt-5 flex flex-1 flex-wrap items-end gap-3">
         <Link href={`/kontakty/?branch=${b.id}#zayavka`} className="smt-btn smt-btn-primary !min-h-[44px]">Записаться</Link>
-        <a href={b.yandexMaps} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost !min-h-[44px]">Открыть в Яндекс.Картах</a>
-        <a href={routeUrl(b.address)} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost !min-h-[44px]">Построить маршрут</a>
+        <Link href={`/filialy/${b.slug}/`} className="smt-btn smt-btn-ghost !min-h-[44px]">Подробнее о филиале</Link>
+        <a href={b.routeUrl} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost !min-h-[44px]">Построить маршрут</a>
       </div>
-
-      {b.gallery && b.gallery.length > 0 && (
-        <div className="mt-6 border-t pt-5" style={{ borderColor: "var(--smt-border)" }}>
-          <p className="mb-3 text-[13px] font-medium uppercase tracking-widest" style={{ color: "var(--smt-blue)", opacity: 0.8 }}>
-            Фотографии
-          </p>
-          <ul style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>
-            {b.gallery.map((photo) => (
-              <li key={photo.src} style={{ position: "relative", aspectRatio: "1 / 1", overflow: "hidden", borderRadius: "10px", background: "var(--smt-grey)" }}>
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(max-width: 768px) 33vw, 20vw"
-                  className="object-cover"
-                  style={{ transition: "opacity 0.3s" }}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </div>
   );
 }
@@ -75,8 +61,8 @@ export function BranchMapPanel() {
                 <p className="text-[15px] font-semibold" style={{ color: "var(--smt-dark)" }}>{b.title}</p>
                 <p className="mt-1 text-[14px] smt-muted">{b.address}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <a href={b.yandexMaps} target="_blank" rel="noopener noreferrer" className="smt-link text-[14px]">Яндекс.Карты →</a>
-                  <a href={routeUrl(b.address)} target="_blank" rel="noopener noreferrer" className="smt-link text-[14px]">Маршрут →</a>
+                  <Link href={`/filialy/${b.slug}/`} className="smt-link text-[14px]">Подробнее →</Link>
+                  <a href={b.routeUrl} target="_blank" rel="noopener noreferrer" className="smt-link text-[14px]">Маршрут →</a>
                 </div>
               </li>
             ))}
