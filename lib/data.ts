@@ -1471,6 +1471,8 @@ export const programBySlug = (slug: string) => PROGRAMS.find((p) => p.slug === s
    BRANCHES — филиалы клиники. Контактные данные общие для всех филиалов.
    Координаты НЕ выдумываем: где нет verified embed — ссылка-поиск по адресу.
    ──────────────────────────────────────────────────────────────────────── */
+export type BranchPhoto = { src: string; alt: string };
+
 export type Branch = {
   id: string;
   title: string;
@@ -1487,6 +1489,7 @@ export type Branch = {
   googleMaps: string;
   status: "active";
   note: string;
+  gallery?: BranchPhoto[];
 };
 
 const mapSearch = (q: string) => ({
@@ -1506,6 +1509,14 @@ export const BRANCHES: Branch[] = [
     yandexMaps: CLINIC.yandexMaps, googleMaps: CLINIC.googleMaps,
     status: "active",
     note: "Основной адрес клиники",
+    gallery: [
+      { src: "/assets/clinic/kosmonavtov/reception-2.jpg",      alt: "Ресепшн клиники «ПРО спокойствие» на Космонавтов" },
+      { src: "/assets/clinic/kosmonavtov/hall-2.jpg",           alt: "Холл клиники «ПРО спокойствие» на Космонавтов" },
+      { src: "/assets/clinic/kosmonavtov/doctor-office-2.jpg",  alt: "Кабинет врача клиники «ПРО спокойствие»" },
+      { src: "/assets/clinic/kosmonavtov/procedure-room-1.jpg", alt: "Процедурный кабинет клиники «ПРО спокойствие»" },
+      { src: "/assets/clinic/kosmonavtov/procedure-room-2.jpg", alt: "Процедурный кабинет клиники «ПРО спокойствие»" },
+      { src: "/assets/clinic/kosmonavtov/office-4.jpg",         alt: "Кабинет специалиста клиники «ПРО спокойствие»" },
+    ],
   },
   {
     id: "gromova",

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BRANCHES, type Branch } from "@/lib/data";
 
@@ -29,6 +30,28 @@ export function BranchCard({ b }: { b: Branch }) {
         <a href={b.yandexMaps} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost !min-h-[44px]">Открыть в Яндекс.Картах</a>
         <a href={routeUrl(b.address)} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost !min-h-[44px]">Построить маршрут</a>
       </div>
+
+      {b.gallery && b.gallery.length > 0 && (
+        <div className="mt-6 border-t pt-5" style={{ borderColor: "var(--smt-border)" }}>
+          <p className="mb-3 text-[13px] font-medium uppercase tracking-widest" style={{ color: "var(--smt-blue)", opacity: 0.8 }}>
+            Фотографии
+          </p>
+          <ul style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>
+            {b.gallery.map((photo) => (
+              <li key={photo.src} style={{ position: "relative", aspectRatio: "1 / 1", overflow: "hidden", borderRadius: "10px", background: "var(--smt-grey)" }}>
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 33vw, 20vw"
+                  className="object-cover"
+                  style={{ transition: "opacity 0.3s" }}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
