@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/smt/SiteHeader";
 import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Breadcrumbs } from "@/components/smt/Breadcrumbs";
 import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
-import { PhotoPlaceholder, TextPlaceholder } from "@/components/smt/Placeholder";
+import { TextPlaceholder } from "@/components/smt/Placeholder";
 import { BranchesSection } from "@/components/smt/Branches";
 import { CLINIC, bySlug, DOCTORS } from "@/lib/data";
 
@@ -38,7 +39,25 @@ export default function AboutPage() {
                 <span className="smt-chip">Конфиденциально</span>
               </div>
             </div>
-            <PhotoPlaceholder ratio="4/3" label="Фото клиники готовится" />
+            <div className="relative">
+              <div
+                className="overflow-hidden rounded-[18px] border bg-white p-4 shadow-sm sm:p-6"
+                style={{ borderColor: "var(--smt-border)" }}
+              >
+                <Image
+                  src="/assets/clinic/about-banner-safe.jpeg"
+                  alt="Медицинский центр «ПРО спокойствие и здоровье»"
+                  width={1080}
+                  height={850}
+                  priority
+                  sizes="(max-width: 768px) 100vw, 48vw"
+                  className="h-auto w-full rounded-[10px]"
+                />
+              </div>
+              <p className="mt-3 text-center text-[13px] smt-muted">
+                Медицинский центр «ПРО спокойствие и здоровье», Екатеринбург
+              </p>
+            </div>
           </div>
         </section>
 
