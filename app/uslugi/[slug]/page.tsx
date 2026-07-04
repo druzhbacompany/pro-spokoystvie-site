@@ -6,19 +6,131 @@ import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Breadcrumbs } from "@/components/smt/Breadcrumbs";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { Cta } from "@/components/smt/Cta";
-import { SERVICES, serviceBySlug, bySlug, CLINIC } from "@/lib/data";
+import { SERVICES, serviceBySlug, bySlug, CLINIC, CATALOG_SERVICES, catalogServiceBySlug } from "@/lib/data";
 
 export function generateStaticParams() {
-  return SERVICES.filter((s) => s.hasPage).map((s) => ({ slug: s.slug }));
+  return [
+    ...CATALOG_SERVICES.map((s) => ({ slug: s.slug })),
+    ...SERVICES.filter((s) => s.hasPage).map((s) => ({ slug: s.slug })),
+  ];
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const c = catalogServiceBySlug(params.slug);
+  if (c) {
+    return {
+      title: `${c.title} — цены и запись | «ПРО спокойствие», Екатеринбург`,
+      description: `${c.title} в клинике «ПРО спокойствие»: ${c.blurb} Цены по прайсу, запись по телефону ${CLINIC.phone}.`,
+    };
+  }
   const s = serviceBySlug(params.slug);
   if (!s || !s.hasPage) return {};
   return { title: s.metaTitle, description: s.metaDescription };
 }
 
+/** Карточка услуги по прайсу (P0, PRODUCT_MATRIX_SITE_V1 rev.2). */
+function CatalogServicePage({ slug }: { slug: string }) {
+  const c = catalogServiceBySlug(slug)!;
+  const doctors = (c.doctorSlugs ?? []).map(bySlug).filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
+  return (
+    <div className="smt">
+      <SiteHeader active="Услуги" />
+      <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Услуги", href: "/uslugi/" }, { label: c.title }]} />
+      <main id="main">
+        {/* Hero */}
+        <section className="smt-section smt-section-alt">
+          <div className="smt-container max-w-[68ch]">
+            <p className="smt-eyebrow">{c.category} · Екатеринбург</p>
+            <h1 className="smt-h1 mt-2">{c.title}</h1>
+            <p className="smt-lead mt-4 smt-muted">{c.blurb}</p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <span className="smt-chip">Конфиденциально</span>
+              <span className="smt-chip">Без постановки на учёт</span>
+              {c.priceRows[0] ? <span className="smt-chip">{c.priceRows[0].price.includes("/") ? c.priceRows[0].price : `от ${c.priceRows[0].price}`}</span> : null}
+            </div>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link href="#zayavka" className="smt-btn smt-btn-primary">Записаться</Link>
+              <a href={CLINIC.phoneHref} className="smt-btn smt-btn-ghost">{CLINIC.phone}</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Как проходит */}
+        {c.details?.length ? (
+          <section className="smt-section">
+            <div className="smt-container max-w-[68ch]">
+              <h2 className="smt-h2">Как проходит</h2>
+              <ul className="mt-6 space-y-3">
+                {c.details.map((x) => (
+                  <li key={x} className="flex gap-2 smt-body smt-muted">
+                    <span style={{ color: "var(--smt-blue)" }}>✓</span>{x}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ) : null}
+
+        {/* Стоимость (из прайса) */}
+        <section className={c.details?.length ? "smt-section smt-section-alt" : "smt-section"}>
+          <div className="smt-container">
+            <h2 className="smt-h2">Стоимость</h2>
+            <div className="mt-6 max-w-xl space-y-3">
+              {c.priceRows.map((row) => (
+                <div key={row.name} className="smt-card smt-card-pad flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-[16px] font-semibold" style={{ color: "var(--smt-dark)" }}>{row.name}</p>
+                    {row.note ? <p className="text-[13px] smt-muted">{row.note}</p> : null}
+                  </div>
+                  <span className="text-[18px] font-bold tabular-nums" style={{ color: "var(--smt-dark)" }}>{row.price}</span>
+                </div>
+              ))}
+            </div>
+            {c.disclaimer ? <p className="mt-3 max-w-xl text-[13px] smt-muted">{c.disclaimer}</p> : null}
+            <Link href="/tseny/" className="smt-link mt-3 inline-flex">Полный прайс →</Link>
+          </div>
+        </section>
+
+        {/* С чем обращаются */}
+        {c.helps?.length ? (
+          <section className="smt-section">
+            <div className="smt-container">
+              <h2 className="smt-h3">С чем обращаются</h2>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {c.helps.map((h) => (<span key={h} className="smt-chip">{h}</span>))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
+        {/* Кто вас примет */}
+        {doctors.length ? (
+          <section className="smt-section smt-section-alt">
+            <div className="smt-container">
+              <h2 className="smt-h2">Кто вас примет</h2>
+              <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {doctors.map((d) => (<li key={d.slug}><DoctorCard d={d} /></li>))}
+              </ul>
+            </div>
+          </section>
+        ) : c.doctorsNote ? (
+          <section className="smt-section smt-section-alt">
+            <div className="smt-container max-w-[68ch]">
+              <h2 className="smt-h3">Кто вас примет</h2>
+              <p className="mt-3 smt-body smt-muted">{c.doctorsNote}</p>
+            </div>
+          </section>
+        ) : null}
+
+        <Cta title="Записаться на приём" topic={c.title} />
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
+
 export default function ServicePage({ params }: { params: { slug: string } }) {
+  if (catalogServiceBySlug(params.slug)) return <CatalogServicePage slug={params.slug} />;
   const s = serviceBySlug(params.slug);
   if (!s || !s.hasPage) notFound();
   const doctors = (s.doctorSlugs ?? []).map(bySlug).filter(Boolean) as NonNullable<ReturnType<typeof bySlug>>[];
