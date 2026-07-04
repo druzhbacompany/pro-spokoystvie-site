@@ -48,28 +48,74 @@ export const BOOKING_ANCHOR = "#zayavka";
  * Документы клиники — реальные сканы (ASSET_CANON_V2). Без плейсхолдеров.
  * Используются на /dokumenty/ и в TrustSection.
  */
-export const DOCUMENTS = [
+export type DocumentItem = {
+  /** Cover / first-page image (used by card thumbnail, TrustSection, blocks gallery). */
+  src: string;
+  label: string;
+  desc: string;
+  /** Optional full page list for multi-page documents (first item === src). */
+  pages?: string[];
+};
+
+export const DOCUMENTS: DocumentItem[] = [
   {
-    src: "/assets/documents/license.jpg",
-    label: "Лицензия на медицинскую деятельность",
-    desc: "Лицензия Минздрава Свердловской области с QR-кодом для проверки подлинности.",
+    src: "/assets/documents/license-1.jpg",
+    label: "Выписка из реестра лицензий",
+    desc: "Актуальная выписка из реестра лицензий (портал Росздравнадзора) с QR-кодом: статус, реквизиты и перечень медицинских услуг. 2 страницы.",
+    pages: ["/assets/documents/license-1.jpg", "/assets/documents/license-2.jpg"],
   },
   {
-    src: "/assets/documents/rules-priem.jpg",
-    label: "Правила записи на приём",
-    desc: "Порядок записи и оказания платных медицинских услуг в клинике.",
+    src: "/assets/documents/consumer-notice.jpg",
+    label: "Уведомление для потребителей платных медицинских услуг",
+    desc: "Уведомление для потребителей платных медицинских услуг — с печатью и подписью руководителя.",
   },
   {
-    src: "/assets/documents/grafik-priem.jpg",
-    label: "График приёма граждан",
-    desc: "Режим работы клиники и часы приёма для пациентов.",
+    src: "/assets/documents/reception-schedule.jpg",
+    label: "График приёма граждан руководителем",
+    desc: "График приёма граждан руководителем медицинской организации.",
   },
   {
-    src: "/assets/documents/control-organy.jpg",
+    src: "/assets/documents/control-organs.jpg",
     label: "Контролирующие органы",
-    desc: "Сведения о надзорных органах и порядке обращения.",
+    desc: "Адреса и контактные данные надзорных органов и порядок обращения.",
   },
-] as const;
+  {
+    src: "/assets/documents/working-hours.jpg",
+    label: "Режим работы медицинской организации",
+    desc: "Режим работы клиники по дням недели.",
+  },
+  {
+    src: "/assets/documents/organization-info.jpg",
+    label: "Информация о медицинской организации",
+    desc: "Полные реквизиты организации: наименование, адрес, ИНН, КПП, ОГРН, банковские данные.",
+  },
+  {
+    src: "/assets/documents/paid-services-policy-1.jpg",
+    label: "Положение о порядке и условиях предоставления платных медицинских услуг",
+    desc: "Порядок и условия предоставления платных медицинских услуг клиники. 4 страницы.",
+    pages: [
+      "/assets/documents/paid-services-policy-1.jpg",
+      "/assets/documents/paid-services-policy-2.jpg",
+      "/assets/documents/paid-services-policy-3.jpg",
+      "/assets/documents/paid-services-policy-4.jpg",
+    ],
+  },
+  {
+    src: "/assets/documents/patient-rights-1.jpg",
+    label: "Информация о правах и обязанностях граждан в сфере охраны здоровья",
+    desc: "Права и обязанности граждан в сфере охраны здоровья (по ФЗ-323). 8 страниц.",
+    pages: [
+      "/assets/documents/patient-rights-1.jpg",
+      "/assets/documents/patient-rights-2.jpg",
+      "/assets/documents/patient-rights-3.jpg",
+      "/assets/documents/patient-rights-4.jpg",
+      "/assets/documents/patient-rights-5.jpg",
+      "/assets/documents/patient-rights-6.jpg",
+      "/assets/documents/patient-rights-7.jpg",
+      "/assets/documents/patient-rights-8.jpg",
+    ],
+  },
+];
 
 export type Doctor = {
   slug: string;

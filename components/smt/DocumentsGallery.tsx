@@ -42,7 +42,9 @@ export function DocumentsGallery() {
               <span className="flex flex-1 flex-col smt-card-pad">
                 <span className="smt-h3">{doc.label}</span>
                 <span className="mt-2 flex-1 text-[15px] smt-muted">{doc.desc}</span>
-                <span className="smt-link mt-4 inline-flex">Смотреть документ →</span>
+                <span className="smt-link mt-4 inline-flex">
+                  {doc.pages && doc.pages.length > 1 ? `Смотреть документ · ${doc.pages.length} стр. →` : "Смотреть документ →"}
+                </span>
               </span>
             </button>
           </li>
@@ -59,7 +61,14 @@ export function DocumentsGallery() {
               </button>
             </div>
             <div className="overflow-auto p-3 sm:p-5" style={{ background: "var(--smt-grey)" }}>
-              <Image src={active.src} alt={active.label} width={1200} height={1600} sizes="(max-width:768px) 92vw, 768px" className="mx-auto h-auto w-full max-w-full rounded-[10px]" />
+              {(active.pages ?? [active.src]).map((pageSrc, i, arr) => (
+                <div key={pageSrc} className={i > 0 ? "mt-4" : ""}>
+                  {arr.length > 1 ? (
+                    <p className="mb-2 text-[13px] smt-muted">Страница {i + 1} из {arr.length}</p>
+                  ) : null}
+                  <Image src={pageSrc} alt={arr.length > 1 ? `${active.label}, страница ${i + 1}` : active.label} width={1200} height={1600} sizes="(max-width:768px) 92vw, 768px" className="mx-auto h-auto w-full max-w-full rounded-[10px]" />
+                </div>
+              ))}
             </div>
             <p className="border-t px-5 py-3 text-[13px] smt-muted" style={{ borderColor: "var(--smt-border)" }}>{active.desc}</p>
           </div>
