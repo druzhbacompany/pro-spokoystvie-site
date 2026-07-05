@@ -32,10 +32,10 @@ export function SiteHeader({ active }: { active?: string }) {
       <div className={`smt-container flex items-center justify-between gap-4 transition-all ${scrolled ? "h-16" : "h-[72px] md:h-20"}`}>
         <Link href="/" aria-label="ПРО спокойствие — на главную" className="flex items-center">
           <Image
-            src="/donor-assets-v2/logo/logo-trimmed.png"
+            src="/assets/logo/pro-spokoystvie-logo.svg"
             alt="ПРО спокойствие — медицинский центр"
-            width={760}
-            height={193}
+            width={1143}
+            height={245}
             priority
             className={`w-auto transition-all ${scrolled ? "h-8" : "h-9 md:h-10"}`}
           />

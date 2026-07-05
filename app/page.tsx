@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/smt/SiteHeader";
+import { HeroPromoSlider } from "@/components/home/HeroPromoSlider";
 import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
@@ -20,34 +20,14 @@ export default function HomePage() {
     <div className="smt">
       <SiteHeader />
       <main id="main">
-        {/* [1] Hero */}
+        {/* [1] Hero — промо-слайдер (утверждён владельцем, 2026-07-05).
+            Статусная строка → сохранённый H1 → карточка-слайдер (HeroPromoSlider). */}
         <section className="smt-section smt-section-alt">
-          <div className="smt-container grid items-center gap-10 md:grid-cols-2">
-            <div>
-              <p className="smt-eyebrow">Медицинский центр · Екатеринбург</p>
-              <h1 className="smt-h1 mt-3">Психиатрия, психотерапия и психология — спокойно и конфиденциально</h1>
-              <p className="smt-lead mt-5 smt-muted">
-                Психиатр, психотерапевт, психолог и невролог работают вместе. Начните с одной консультации — без давления и без постановки на учёт.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                <span className="smt-chip">Лицензия Минздрава</span>
-                <span className="smt-chip">Без постановки на учёт</span>
-                <span className="smt-chip">{CLINIC.hoursWeek}</span>
-              </div>
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Link href="#zayavka" className="smt-btn smt-btn-primary">Записаться на приём</Link>
-                <a href={CLINIC.phoneHref} className="smt-btn smt-btn-ghost">{CLINIC.phone}</a>
-              </div>
-            </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[15px]">
-              <Image
-                src="/assets/clinic/interior-1.png"
-                alt="Интерьер клиники «ПРО спокойствие»"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+          <div className="smt-container">
+            <p className="smt-eyebrow">Сеть профильных медицинских клиник</p>
+            <h1 className="smt-h1 mt-3 max-w-[26ch]">Психиатрия, психотерапия и психология — спокойно и конфиденциально</h1>
+            <div className="mt-8">
+              <HeroPromoSlider />
             </div>
           </div>
         </section>
