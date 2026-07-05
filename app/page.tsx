@@ -22,11 +22,12 @@ export default function HomePage() {
       <main id="main">
         {/* [1] Hero — промо-слайдер (утверждён владельцем, 2026-07-05).
             Статусная строка → сохранённый H1 → карточка-слайдер (HeroPromoSlider). */}
-        <section className="smt-section smt-section-alt">
+        <section className="smt-section smt-section-alt !pt-8 md:!pt-10">
           <div className="smt-container">
             <p className="smt-eyebrow">Сеть профильных медицинских клиник</p>
-            <h1 className="smt-h1 mt-3 max-w-[26ch]">Психиатрия, психотерапия и психология — спокойно и конфиденциально</h1>
-            <div className="mt-8">
+            {/* H1 full-width: заголовок страницы над карточкой, без пустоты справа */}
+            <h1 className="smt-h1 mt-3">Психиатрия, психотерапия и психология — спокойно и конфиденциально</h1>
+            <div className="mt-6">
               <HeroPromoSlider />
             </div>
           </div>
