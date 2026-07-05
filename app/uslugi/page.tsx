@@ -14,6 +14,12 @@ export const metadata: Metadata = {
 
 /** Витрина прайса: P0 (PRODUCT_MATRIX_SITE_V1 rev.2). Хабы IV/процедурного — отдельные карточки. */
 const HUB_CARDS: Record<string, { href: string; title: string; blurb: string; extra?: string }> = {
+  "Неврология": {
+    href: "/uslugi/nevrologiya/",
+    title: "Неврология и лечение боли — обзор",
+    blurb: "Когда обращаться к неврологу, с чем помогает врач, как проходит приём и как подготовиться. Материалы о мигрени, полинейропатии и хронической боли.",
+    extra: "направление · 4 услуги",
+  },
   "IV-терапия": {
     href: "/uslugi/iv-terapiya/",
     title: "IV-терапия (капельницы)",

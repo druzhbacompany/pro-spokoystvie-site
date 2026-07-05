@@ -6,16 +6,24 @@ import { SiteFooter } from "@/components/smt/SiteFooter";
 import { Breadcrumbs } from "@/components/smt/Breadcrumbs";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { Cta } from "@/components/smt/Cta";
-import { SERVICES, serviceBySlug, bySlug, CLINIC, CATALOG_SERVICES, catalogServiceBySlug } from "@/lib/data";
+import { SERVICES, serviceBySlug, bySlug, CLINIC, CATALOG_SERVICES, catalogServiceBySlug, NEURO_INFO_PAGES, neuroInfoBySlug, NEURO_DISCLAIMER } from "@/lib/data";
 
 export function generateStaticParams() {
   return [
     ...CATALOG_SERVICES.map((s) => ({ slug: s.slug })),
+    ...NEURO_INFO_PAGES.map((p) => ({ slug: p.slug })),
     ...SERVICES.filter((s) => s.hasPage).map((s) => ({ slug: s.slug })),
   ];
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const n = neuroInfoBySlug(params.slug);
+  if (n) {
+    return {
+      title: `${n.title} | Невролог в Екатеринбурге — «ПРО спокойствие»`,
+      description: `${n.lead} Очная консультация невролога: ${CLINIC.phone}.`,
+    };
+  }
   const c = catalogServiceBySlug(params.slug);
   if (c) {
     return {
@@ -26,6 +34,117 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const s = serviceBySlug(params.slug);
   if (!s || !s.hasPage) return {};
   return { title: s.metaTitle, description: s.metaDescription };
+}
+
+/** Инфостраница неврологии (P1): состояние ≠ услуга, ведёт на услуги из прайса. */
+function NeuroInfoScreen({ slug }: { slug: string }) {
+  const n = neuroInfoBySlug(slug)!;
+  const doctor = bySlug("tadevosyan-ns");
+  return (
+    <div className="smt">
+      <SiteHeader active="Услуги" />
+      <Breadcrumbs items={[{ label: "Главная", href: "/" }, { label: "Услуги", href: "/uslugi/" }, { label: "Неврология", href: "/uslugi/nevrologiya/" }, { label: n.catalogTitle }]} />
+      <main id="main">
+        {/* Hero */}
+        <section className="smt-section smt-section-alt">
+          <div className="smt-container max-w-[68ch]">
+            <p className="smt-eyebrow">Неврология · Екатеринбург</p>
+            <h1 className="smt-h1 mt-2">{n.title}</h1>
+            <p className="smt-lead mt-4 smt-muted">{n.lead}</p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link href="#zayavka" className="smt-btn smt-btn-primary">Записаться к неврологу</Link>
+              <a href={CLINIC.phoneHref} className="smt-btn smt-btn-ghost">{CLINIC.phone}</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Content sections */}
+        <section className="smt-section">
+          <div className="smt-container max-w-[72ch] space-y-10">
+            {n.sections.map((sec) => (
+              <div key={sec.title}>
+                <h2 className="smt-h2">{sec.title}</h2>
+                {sec.paragraphs?.map((p) => (
+                  <p key={p} className="mt-4 smt-body smt-muted">{p}</p>
+                ))}
+                {sec.bullets?.length ? (
+                  <ul className="mt-4 space-y-3">
+                    {sec.bullets.map((b) => (
+                      <li key={b} className="flex gap-2 smt-body smt-muted">
+                        <span style={{ color: "var(--smt-blue)" }}>·</span>
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Red flags */}
+        {n.redFlags ? (
+          <section className="smt-section smt-section-alt">
+            <div className="smt-container max-w-[72ch] smt-card smt-card-pad md:!p-7">
+              <h2 className="smt-h3">{n.redFlags.title}</h2>
+              <p className="mt-4 smt-body" style={{ color: "var(--smt-dark)" }}>{n.redFlags.text}</p>
+            </div>
+          </section>
+        ) : null}
+
+        {/* FAQ */}
+        {n.faq?.length ? (
+          <section className="smt-section">
+            <div className="smt-container max-w-[760px]">
+              <h2 className="smt-h2 text-center">Частые вопросы</h2>
+              <div className="mt-8 divide-y" style={{ borderColor: "var(--smt-border)" }}>
+                {n.faq.map((q, i) => (
+                  <details key={q.q} open={i < 2} className="border-b py-2" style={{ borderColor: "var(--smt-border)" }}>
+                    <summary className="cursor-pointer list-none py-3 text-[17px] font-semibold" style={{ color: "var(--smt-dark)" }}>{q.q}</summary>
+                    <p className="pb-3 smt-body smt-muted">{q.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
+        {/* Related services */}
+        <section className={n.faq?.length ? "smt-section smt-section-alt" : "smt-section"}>
+          <div className="smt-container">
+            <h2 className="smt-h3">Связанные услуги</h2>
+            <ul className="mt-4 flex flex-wrap gap-4">
+              {n.relatedServices.map((r) => (
+                <li key={r.href}><Link href={r.href} className="smt-link">{r.label} →</Link></li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Doctor */}
+        {doctor ? (
+          <section className="smt-section">
+            <div className="smt-container">
+              <h2 className="smt-h2">Кто вас примет</h2>
+              <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <li><DoctorCard d={doctor} /></li>
+              </ul>
+            </div>
+          </section>
+        ) : null}
+
+        {/* Disclaimer */}
+        <section className="smt-section smt-section-alt">
+          <div className="smt-container max-w-[72ch]">
+            <p className="text-[13px] smt-muted">{NEURO_DISCLAIMER}</p>
+          </div>
+        </section>
+
+        <Cta title="Записаться к неврологу" topic={n.catalogTitle} />
+      </main>
+      <SiteFooter />
+    </div>
+  );
 }
 
 /** Карточка услуги по прайсу (P0, PRODUCT_MATRIX_SITE_V1 rev.2). */
@@ -103,6 +222,55 @@ function CatalogServicePage({ slug }: { slug: string }) {
           </section>
         ) : null}
 
+        {/* Как подготовиться к приёму (P1) */}
+        {c.checklist?.length ? (
+          <section className="smt-section smt-section-alt">
+            <div className="smt-container max-w-[72ch]">
+              <h2 className="smt-h2">Как подготовиться к приёму</h2>
+              <p className="smt-lead mt-3 smt-muted">Чтобы визит прошёл максимально эффективно, а врач получил полную картину:</p>
+              <ul className="mt-6 space-y-3">
+                {c.checklist.map((item) => (
+                  <li key={item} className="flex gap-2 smt-body smt-muted">
+                    <span style={{ color: "var(--smt-blue)" }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ) : null}
+
+        {/* FAQ (P1) */}
+        {c.faq?.length ? (
+          <section className="smt-section">
+            <div className="smt-container max-w-[760px]">
+              <h2 className="smt-h2 text-center">Частые вопросы</h2>
+              <div className="mt-8 divide-y" style={{ borderColor: "var(--smt-border)" }}>
+                {c.faq.map((q, i) => (
+                  <details key={q.q} open={i < 2} className="border-b py-2" style={{ borderColor: "var(--smt-border)" }}>
+                    <summary className="cursor-pointer list-none py-3 text-[17px] font-semibold" style={{ color: "var(--smt-dark)" }}>{q.q}</summary>
+                    <p className="pb-3 smt-body smt-muted">{q.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
+        {/* Полезные материалы (P1) */}
+        {c.infoLinks?.length ? (
+          <section className="smt-section">
+            <div className="smt-container">
+              <h2 className="smt-h3">Полезные материалы</h2>
+              <ul className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
+                {c.infoLinks.map((r) => (
+                  <li key={r.href}><Link href={r.href} className="smt-link">{r.label} →</Link></li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ) : null}
+
         {/* Кто вас примет */}
         {doctors.length ? (
           <section className="smt-section smt-section-alt">
@@ -130,6 +298,7 @@ function CatalogServicePage({ slug }: { slug: string }) {
 }
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
+  if (neuroInfoBySlug(params.slug)) return <NeuroInfoScreen slug={params.slug} />;
   if (catalogServiceBySlug(params.slug)) return <CatalogServicePage slug={params.slug} />;
   const s = serviceBySlug(params.slug);
   if (!s || !s.hasPage) notFound();
