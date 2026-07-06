@@ -26,21 +26,41 @@ const manrope = Manrope({
   display: "swap",
 });
 
+const SITE_URL = "https://pro-spokoystvie.ru";
+const OG_IMAGE = "/assets/hero/home-hero-team-checkup.png";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pro-spokoystvie.ru"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "ПРО спокойствие — психиатрия и психотерапия в Екатеринбурге",
-    template: "%s — ПРО спокойствие",
+    default: "ПРО Спокойствие — психиатрия, психотерапия, психология и неврология в Екатеринбурге",
+    template: "%s — ПРО Спокойствие",
   },
   description:
-    "Бережная помощь при тревоге, неврозах и зависимом поведении. Спокойно и конфиденциально, без постановки на учёт. Психиатрия и психотерапия с доказанной эффективностью.",
+    "Медицинский центр «ПРО Спокойствие» в Екатеринбурге: консультации психиатра, психотерапевта, психолога и невролога. Спокойный приём, медицинская лицензия, очные консультации.",
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "ru_RU",
-    siteName: "ПРО спокойствие",
-    title: "ПРО спокойствие — психиатрия и психотерапия в Екатеринбурге",
+    siteName: "ПРО Спокойствие",
+    url: SITE_URL,
+    title: "ПРО Спокойствие — психиатрия, психотерапия, психология и неврология в Екатеринбурге",
     description:
-      "Бережная помощь при тревоге, неврозах и зависимом поведении. Конфиденциально, без постановки на учёт.",
+      "Медицинский центр «ПРО Спокойствие» в Екатеринбурге: консультации психиатра, психотерапевта, психолога и невролога. Медицинская лицензия, очные консультации.",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1672,
+        height: 941,
+        alt: "Команда медицинского центра «ПРО Спокойствие»",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ПРО Спокойствие — психиатрия, психотерапия, психология и неврология в Екатеринбурге",
+    description:
+      "Медицинский центр в Екатеринбурге: психиатр, психотерапевт, психолог и невролог. Очные консультации, медицинская лицензия.",
+    images: [OG_IMAGE],
   },
 };
 
@@ -53,14 +73,26 @@ export const viewport: Viewport = {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  name: "ПРО спокойствие",
+  "@id": `${SITE_URL}/#clinic`,
+  name: "Медицинский центр «ПРО Спокойствие»",
   legalName: CLINIC.legalName,
-  medicalSpecialty: ["Psychiatric", "Psychotherapy"],
+  url: SITE_URL,
+  // Валидные значения MedicalSpecialty schema.org; психотерапия/психология/терапия отражены в knowsAbout.
+  medicalSpecialty: ["Psychiatric", "Neurologic"],
+  knowsAbout: [
+    "Психиатрия",
+    "Психотерапия",
+    "Психология",
+    "Неврология",
+    "Терапия",
+    "IV-терапия по назначению врача",
+    "Поддержка ремиссии",
+  ],
   telephone: CLINIC.phone,
   email: CLINIC.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "пр-кт Космонавтов, 101б",
+    streetAddress: "проспект Космонавтов, 101-Б",
     addressLocality: "Екатеринбург",
     addressCountry: "RU",
   },
@@ -80,6 +112,16 @@ const orgJsonLd = {
   ],
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: "ПРО Спокойствие",
+  url: SITE_URL,
+  inLanguage: "ru-RU",
+  publisher: { "@id": `${SITE_URL}/#clinic` },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -97,6 +139,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         {children}
         <CookieBanner />
