@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/uslugi/nevrologiya", priority: 0.8 },
     { path: "/uslugi/iv-terapiya", priority: 0.8 },
     { path: "/uslugi/protsedurnyy-kabinet", priority: 0.6 },
+    { path: "/analizy", priority: 0.8 },
     { path: "/vrachi", priority: 0.8 },
     { path: "/tseny", priority: 0.7 },
     { path: "/o-klinike", priority: 0.6 },

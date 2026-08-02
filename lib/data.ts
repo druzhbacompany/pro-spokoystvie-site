@@ -34,6 +34,7 @@ export const CLINIC = {
 export const NAV = [
   { label: "Услуги", href: "/uslugi/" },
   { label: "IV-терапия", href: "/uslugi/iv-terapiya/" },
+  { label: "Анализы", href: "/analizy/" },
   // «Программы» убраны из публичной навигации (решение собственника, 2026-07-04):
   // раздел /programmy и все его URL сохранены и доступны напрямую.
   { label: "Врачи", href: "/vrachi/" },

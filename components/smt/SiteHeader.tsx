@@ -41,13 +41,19 @@ export function SiteHeader({ active }: { active?: string }) {
           />
         </Link>
 
-        <nav aria-label="Основная навигация" className="hidden items-center gap-4 lg:flex xl:gap-6">
+        {/*
+          Полная навигация включается с xl, а не с lg: на 1024–1279px логотип +
+          8 пунктов + телефон + CTA не помещаются в строку (нужно ~1116px), и
+          пункты переносились на две строки. В этом диапазоне работает бургер-
+          меню — в нём те же пункты.
+        */}
+        <nav aria-label="Основная навигация" className="hidden items-center gap-4 xl:flex xl:gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               aria-current={active === item.label ? "page" : undefined}
-              className="text-[14px] font-medium transition-colors hover:opacity-80"
+              className="whitespace-nowrap text-[14px] font-medium transition-colors hover:opacity-80"
               style={{ color: active === item.label ? "var(--smt-blue)" : "var(--smt-dark)" }}
             >
               {item.label}
@@ -55,8 +61,8 @@ export function SiteHeader({ active }: { active?: string }) {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
-          <a href={CLINIC.phoneHref} className="text-[15px] font-semibold" style={{ color: "var(--smt-dark)" }}>
+        <div className="hidden items-center gap-4 xl:flex">
+          <a href={CLINIC.phoneHref} className="whitespace-nowrap text-[15px] font-semibold" style={{ color: "var(--smt-dark)" }}>
             {CLINIC.phone}
           </a>
           <Link href={BOOKING_ANCHOR} className="smt-btn smt-btn-primary !min-h-[44px] !px-5">
@@ -64,7 +70,7 @@ export function SiteHeader({ active }: { active?: string }) {
           </Link>
         </div>
 
-        <div className="flex items-center gap-1 lg:hidden">
+        <div className="flex items-center gap-1 xl:hidden">
           <a href={CLINIC.phoneHref} aria-label="Позвонить" className="flex h-11 w-11 items-center justify-center" style={{ color: "var(--smt-blue)" }}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <path d="M6 4h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5V19a2 2 0 0 1-2 2A15 15 0 0 1 4 6a2 2 0 0 1 2-2" />
@@ -79,7 +85,7 @@ export function SiteHeader({ active }: { active?: string }) {
       </div>
 
       {open ? (
-        <div id="smt-menu" className="border-t px-4 pb-6 pt-4 lg:hidden" style={{ borderColor: "var(--smt-border)" }}>
+        <div id="smt-menu" className="border-t px-4 pb-6 pt-4 xl:hidden" style={{ borderColor: "var(--smt-border)" }}>
           <Link href={BOOKING_ANCHOR} onClick={() => setOpen(false)} className="smt-btn smt-btn-primary mb-4 w-full">
             Записаться
           </Link>
