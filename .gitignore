@@ -26,3 +26,6 @@ docs/*
 !docs/project-memory/
 docs/project-memory/*
 !docs/project-memory/MASTER_CAPSULE_V2.md
+
+# Helix exporter local cache
+data/helix/cache/
