@@ -21,6 +21,9 @@ tsconfig.tsbuildinfo
 design-board/
 external/
 
+# local-only input drops (source photos etc.) — never shipped
+.local-input/
+
 # docs/ stays internal — track ONLY the canonical capsule V2
 docs/*
 !docs/project-memory/
