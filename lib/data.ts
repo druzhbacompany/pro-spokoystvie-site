@@ -485,7 +485,10 @@ export const DOCTORS: Doctor[] = [
       "Полинейропатия",
       "Нарушения сна",
     ],
-    photo: "/assets/doctors/tadevosyan.png",
+    // Имя файла с датой-суффиксом: прежний путь /assets/doctors/tadevosyan.png отдавал
+    // на проде закешированный старый портрет (CDN + кеш оптимизатора Next). Новый путь
+    // гарантирует cache-bust. При следующей замене фото — снова менять суффикс.
+    photo: "/assets/doctors/tadevosyan-202608.png",
     photoStatus: "production",
     href: "/vrachi/tadevosyan-ns/",
     firstVisit: { name: "Первичная консультация невролога", duration: "40 минут", price: "от 3 500 ₽" },
