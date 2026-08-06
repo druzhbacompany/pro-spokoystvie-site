@@ -37,7 +37,13 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* [2] Service routing by category.
+        {/* [2] Branches (SMT-like clinic locations).
+            2026-08-07: филиалы подняты выше направлений — адрес и запись должны быть
+            видны сразу после героя. Секция без smt-section-alt: герой уже на фоне bg2,
+            белый блок даёт чистую границу между ними. */}
+        <BranchesSection title="Филиалы клиники" />
+
+        {/* [3] Service routing by category.
             2026-08-05 (P1-аудит): на главной было два конкурирующих заголовка одного
             блока — надзаголовок «С чем мы помогаем» и H2 «Направления помощи».
             Оставлен один понятный H2, надзаголовок сведён к короткой метке раздела. */}
@@ -85,7 +91,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* [3] Doctors */}
+        {/* [4] Doctors */}
         <section className="smt-section smt-section-alt">
           <div className="smt-container">
             <p className="smt-eyebrow">Специалисты</p>
@@ -97,39 +103,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* [4] Programs — блок убран с главной (решение собственника, 2026-07-04).
+        {/* [5] Programs — блок убран с главной (решение собственника, 2026-07-04).
             Раздел /programmy и данные PROGRAMS сохранены, страницы доступны напрямую. */}
 
-        {/* [5] Trust / license */}
-        <section className="smt-section smt-section-alt">
-          <div className="smt-container grid gap-8 md:grid-cols-[1fr_1fr] md:items-center">
-            <div>
-              <p className="smt-eyebrow">Документы</p>
-              {/* 2026-08-05 (P1-аудит): «Настоящая лицензированная клиника» —
-                  оборонительная и слабая формулировка; заменена на нейтральный факт. */}
-              <h2 className="smt-h2 mt-2">Медицинская помощь по лицензии</h2>
-              <p className="smt-body mt-4 smt-muted-strong">
-                Деятельность клиники лицензирована {CLINIC.licenseAuthority}. Лицензия №{CLINIC.license}. {CLINIC.legalName} · ИНН {CLINIC.inn} · ОГРН {CLINIC.ogrn}.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link href="/dokumenty/" className="smt-btn smt-btn-primary">Документы и лицензия</Link>
-                <a href={CLINIC.licenseCheckUrl} target="_blank" rel="noopener noreferrer" className="smt-btn smt-btn-ghost">Проверить в Росздравнадзоре</a>
-              </div>
-            </div>
-            {/* 2026-08-05 (P1-аудит): убраны безусловные «Конфиденциально» и «Без учёта»
-                (обещание правовых последствий) и «Карты и наличные» (не элемент доверия);
-                режим работы не дублируем — он в блоке единого контакта и в подвале. */}
-            <ul className="grid gap-3 sm:grid-cols-2">
-              <li><span className="smt-chip">С соблюдением врачебной тайны</span></li>
-              <li><span className="smt-chip">Документы в открытом доступе</span></li>
-              <li><span className="smt-chip">Приём по предварительной записи</span></li>
-              <li><span className="smt-chip">Помощь — по показаниям</span></li>
-            </ul>
-          </div>
-        </section>
+        {/* [6] Trust / license — промо-блок «Медицинская помощь по лицензии» убран
+            с главной (решение собственника, 2026-08-07). Страница /dokumenty/ и ссылки
+            на неё в шапке и подвале сохранены. */}
 
-        {/* [6] Branches (SMT-like clinic locations) */}
-        <BranchesSection title="Филиалы клиники" alt />
+        {/* [7] Единый контакт для всех филиалов */}
         <section className="smt-section">
           <div className="smt-container flex flex-wrap items-center justify-between gap-4">
             <div>
