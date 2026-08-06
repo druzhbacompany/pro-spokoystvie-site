@@ -22,7 +22,7 @@ export function Cta({
         <div className="mx-auto max-w-[720px]">
           <div className="mb-6 text-center">
             <h2 className="smt-h2">{title}</h2>
-            <p className="smt-lead mt-3 smt-muted">{lead}</p>
+            <p className="smt-lead mt-3 smt-muted-strong">{lead}</p>
           </div>
           <BookingForm topic={topic} doctor={doctor} sourceBlock={sourceBlock} />
         </div>

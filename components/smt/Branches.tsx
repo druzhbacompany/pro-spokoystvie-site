@@ -28,7 +28,7 @@ export function BranchCard({ b }: { b: Branch }) {
           <p className="mt-1 smt-body" style={{ color: "var(--smt-dark)" }}>{b.address}</p>
         </div>
       </div>
-      <ul className="relative z-10 mt-4 w-fit space-y-1.5 text-[14px] smt-muted">
+      <ul className="relative z-10 mt-4 w-fit space-y-1.5 text-[14px] smt-muted-strong">
         <li>{b.hoursWeek} · {b.hoursWeekend}</li>
         <li><a href={b.phoneHref} className="smt-link">{b.phone}</a></li>
         <li>{b.note}</li>
@@ -59,7 +59,7 @@ export function BranchMapPanel() {
             {BRANCHES.map((b) => (
               <li key={b.id} className="rounded-[12px] bg-white/80 p-4">
                 <p className="text-[15px] font-semibold" style={{ color: "var(--smt-dark)" }}>{b.title}</p>
-                <p className="mt-1 text-[14px] smt-muted">{b.address}</p>
+                <p className="mt-1 text-[14px] smt-muted-strong">{b.address}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <Link href={`/filialy/${b.slug}/`} className="smt-link text-[14px]">Подробнее →</Link>
                   <a href={b.routeUrl} target="_blank" rel="noopener noreferrer" className="smt-link text-[14px]">Маршрут →</a>
@@ -80,7 +80,7 @@ export function BranchesSection({ title = "Филиалы клиники", alt =
       <div className="smt-container">
         <p className="smt-eyebrow">Адреса</p>
         <h2 className="smt-h2 mt-2">{title}</h2>
-        <p className="mt-3 max-w-[68ch] smt-body smt-muted">Контактные данные общие для всех филиалов. Выберите удобный адрес — перезвоним и подтвердим запись.</p>
+        <p className="mt-3 max-w-[68ch] smt-body smt-muted-strong">Контактные данные общие для всех филиалов. Выберите удобный адрес — перезвоним и подтвердим запись.</p>
         <ul className="mt-8 grid gap-6 md:grid-cols-2">
           {BRANCHES.map((b) => (<li key={b.id}><BranchCard b={b} /></li>))}
         </ul>

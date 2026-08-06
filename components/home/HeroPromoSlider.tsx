@@ -67,7 +67,7 @@ export function HeroPromoSlider() {
           </h2>
           <div className="mt-4 space-y-1">
             {slide.description.map((line) => (
-              <p key={line} className="smt-lead smt-muted">{line}</p>
+              <p key={line} className="smt-lead smt-muted-strong">{line}</p>
             ))}
           </div>
           <div className="mt-7">
@@ -146,7 +146,7 @@ export function HeroPromoSlider() {
 
       {/* Юридическое предупреждение — нижняя полоса карточки */}
       <div className="border-t px-6 py-3 sm:px-8" style={{ borderColor: "var(--smt-border)" }}>
-        <p className="text-center text-[11px] uppercase tracking-[0.14em] smt-muted">
+        <p className="text-center text-[11px] uppercase tracking-[0.14em] smt-muted-strong">
           Имеются противопоказания. Необходима консультация специалиста
         </p>
       </div>

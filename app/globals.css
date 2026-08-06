@@ -535,6 +535,10 @@
   --smt-accent: #fe7239; --smt-green: #12533d;
   --smt-bg: #ffffff; --smt-bg2: #f6f6f6; --smt-grey: #f4f6f9; --smt-border: #e6e6e6;
   --smt-blue-bg: #dcecf9; --smt-muted: #809aa5; --smt-text: #2a3338;
+  /* Затемнённый вариант приглушённого текста: #809aa5 на белом даёт ~2.9:1 и
+     не проходит WCAG AA для body-копии. Применяется точечно (главная), чтобы
+     не переопределять существующий .smt-muted на всех страницах. */
+  --smt-muted-strong: #5c7480;
   --smt-radius: 15px; --smt-radius-md: 30px; --smt-radius-lg: 40px;
   --smt-shadow: 0 10px 40px 0 #168dcd33; --smt-shadow-sm: 0 6px 14px #0000001f; --smt-shadow-md: 0 12px 24px #0f29401f;
   --smt-container: 1200px;
@@ -554,6 +558,7 @@
 .smt-lead { font-size: 18px; line-height: 1.5; color: var(--smt-text); }
 .smt-body { font-size: 16px; line-height: 1.5; color: var(--smt-text); }
 .smt-muted { color: var(--smt-muted); }
+.smt-muted-strong { color: var(--smt-muted-strong); }
 @media (min-width: 768px) { .smt-h1 { font-size: 40px; } .smt-h2 { font-size: 30px; } }
 
 .smt-card { background: #fff; border: 1px solid var(--smt-border); border-radius: var(--smt-radius); box-shadow: var(--smt-shadow-sm); }
