@@ -12,7 +12,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!d || d.role === "chief") return {};
   return {
     title: `${d.shortName} — ${d.specialty} в Екатеринбурге`,
-    description: `${d.name} — ${d.specialty.toLowerCase()} клиники «ПРО спокойствие». Помогает при: ${d.helps.join(", ").toLowerCase()}. Конфиденциально, без постановки на учёт.`,
+    description: `${d.name} — ${d.specialty.toLowerCase()} клиники «ПРО спокойствие». Помогает при: ${d.helps.join(", ").toLowerCase()}. Приём бережно, с соблюдением врачебной тайны.`,
   };
 }
 

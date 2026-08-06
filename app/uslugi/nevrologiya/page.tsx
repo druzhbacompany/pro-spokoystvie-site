@@ -54,7 +54,7 @@ export default function NeurologyHubPage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="smt-chip">Доказательный подход</span>
-              <span className="smt-chip">Конфиденциально</span>
+              <span className="smt-chip">С соблюдением врачебной тайны</span>
               <span className="smt-chip">от 3 000 ₽</span>
             </div>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">

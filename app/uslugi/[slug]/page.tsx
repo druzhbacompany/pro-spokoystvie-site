@@ -162,9 +162,11 @@ function CatalogServicePage({ slug }: { slug: string }) {
             <p className="smt-eyebrow">{c.category} · Екатеринбург</p>
             <h1 className="smt-h1 mt-2">{c.title}</h1>
             <p className="smt-lead mt-4 smt-muted">{c.blurb}</p>
+            {/* 2026-08-07 (чистка формулировок): чипы «Конфиденциально» и
+                «Без постановки на учёт» заменены на безопасные формулировки. */}
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="smt-chip">Конфиденциально</span>
-              <span className="smt-chip">Без постановки на учёт</span>
+              <span className="smt-chip">С соблюдением врачебной тайны</span>
+              <span className="smt-chip">Без осуждения</span>
               {c.priceRows[0] ? <span className="smt-chip">{c.priceRows[0].price.includes("/") ? c.priceRows[0].price : `от ${c.priceRows[0].price}`}</span> : null}
             </div>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -315,9 +317,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <p className="smt-eyebrow">Психическое здоровье · Екатеринбург</p>
             <h1 className="smt-h1 mt-2">{s.h1}</h1>
             <p className="smt-lead mt-4 smt-muted">{s.lead}</p>
+            {/* 2026-08-07 (чистка формулировок): чипы «Конфиденциально» и
+                «Без постановки на учёт» заменены на безопасные формулировки. */}
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="smt-chip">Конфиденциально</span>
-              <span className="smt-chip">Без постановки на учёт</span>
+              <span className="smt-chip">С соблюдением врачебной тайны</span>
+              <span className="smt-chip">Без осуждения</span>
               {s.priceFrom ? <span className="smt-chip">{s.priceFrom}</span> : null}
             </div>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
