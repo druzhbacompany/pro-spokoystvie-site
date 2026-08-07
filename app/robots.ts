@@ -8,8 +8,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Технические и legacy/preview-маршруты (у самих страниц уже стоит robots:{index:false}).
-      disallow: ["/api/", "/thanks", "/old-home", "/hero-v2", "/hero-v3", "/hero-v4"],
+      // Технические маршруты. Legacy-превью (/old-home, /hero-v2..v4) отдают 308
+      // на «/» — их не запрещаем, чтобы краулеры увидели редирект.
+      disallow: ["/api/", "/thanks"],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
