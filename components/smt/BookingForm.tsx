@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
-import { CLINIC, TIME_SLOTS, branchById } from "@/lib/data";
+import { CLINIC, TIME_SLOTS, branchById, doctorByRef } from "@/lib/data";
 
 /** Direction options (NOT specialists — staff may change, never hardcode doctors). */
 const DIRECTIONS = [
@@ -83,10 +83,19 @@ export function BookingForm({
     setDirection((prev) => prev || directionFromContext(service ?? q.get("priceItem") ?? undefined));
   }, [topic]);
 
+  /**
+   * В ctx.doctor приходит либо slug (проп `doctor` со страницы профиля), либо
+   * краткое ФИО (query `?doctor=` из чипов профиля). В интерфейсе и в заявке
+   * показываем публичное ФИО; slug сохраняем отдельно как технический id.
+   */
+  const selectedDoctor = doctorByRef(ctx.doctor);
+  const doctorLabel = selectedDoctor?.name ?? ctx.doctor;
+  const doctorSlug = selectedDoctor?.slug;
+
   const contextLine = ctx.branch
     ? `Вы выбрали филиал: ${ctx.branchAddress ?? ctx.branch}`
-    : ctx.doctor
-      ? `Вы выбрали врача: ${ctx.doctor}`
+    : doctorLabel
+      ? `Вы выбрали специалиста: ${doctorLabel}`
       : ctx.priceItem
         ? `Вы выбрали: ${ctx.priceItem}${ctx.price ? ` · ${ctx.price}` : ""}`
         : ctx.service
@@ -114,7 +123,9 @@ export function BookingForm({
           phone,
           time: (d.get("time") as string) || null,
           topic: ctx.service ?? null,
-          doctor: ctx.doctor ?? null,
+          // В письмо уходит человекочитаемое ФИО; slug остаётся как технический id.
+          doctor: doctorLabel ?? null,
+          doctorSlug: doctorSlug ?? null,
           direction: direction || null,
           priceItem: ctx.priceItem ?? null,
           price: ctx.price ?? null,

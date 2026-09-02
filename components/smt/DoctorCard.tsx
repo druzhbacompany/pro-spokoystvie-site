@@ -35,7 +35,7 @@ export function DoctorCard({ d }: { d: Doctor }) {
 
   const cls = "smt-card smt-card-pad flex h-full flex-col";
   return d.href ? (
-    <Link href={d.href} className={`${cls} is-link`} aria-label={`Подробнее о враче: ${d.name}`}>{inner}</Link>
+    <Link href={d.href} className={`${cls} is-link`} aria-label={`Подробнее о специалисте: ${d.name}`}>{inner}</Link>
   ) : (
     <div className={cls}>{inner}</div>
   );

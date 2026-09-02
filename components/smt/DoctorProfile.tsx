@@ -5,12 +5,14 @@ import { SiteFooter } from "./SiteFooter";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Cta } from "./Cta";
 import { PhotoPlaceholder, TextPlaceholder } from "./Placeholder";
-import { CLINIC, type Doctor, SERVICES } from "@/lib/data";
+import { CLINIC, type Doctor, SERVICES, isMedicalDoctor } from "@/lib/data";
 
 /** SMT-style doctor profile (identity → services → credentials → placeholders → price → CTA). */
 export function DoctorProfile({ doctor }: { doctor: Doctor }) {
   // Services this doctor is profiled for (crosslink врач→услуга).
   const doctorServices = SERVICES.filter((s) => s.hasPage && s.doctorSlugs?.includes(doctor.slug));
+  // Психологи не врачи — общие подписи страницы подстраиваются под роль специалиста.
+  const isDoctor = isMedicalDoctor(doctor);
 
   return (
     <div className="smt">
@@ -54,7 +56,7 @@ export function DoctorProfile({ doctor }: { doctor: Doctor }) {
               </div>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <Link href="#zayavka" className="smt-btn smt-btn-primary">Записаться к врачу</Link>
+                <Link href="#zayavka" className="smt-btn smt-btn-primary">{isDoctor ? "Записаться к врачу" : "Записаться на консультацию"}</Link>
                 <a href={CLINIC.phoneHref} className="smt-btn smt-btn-ghost">{CLINIC.phone}</a>
               </div>
             </div>
@@ -64,7 +66,7 @@ export function DoctorProfile({ doctor }: { doctor: Doctor }) {
         {/* С чем помогает врач (crosslink doctor → service, else booking w/ context) */}
         <section className="smt-section smt-section-alt">
           <div className="smt-container">
-            <h2 className="smt-h2">С чем помогает врач</h2>
+            <h2 className="smt-h2">С чем помогает {isDoctor ? "врач" : "специалист"}</h2>
             <ul className="mt-6 flex flex-wrap gap-3">
               {doctor.helps.map((h) => {
                 const svc = SERVICES.find((s) => s.hasPage && s.catalogTitle.toLowerCase() === h.toLowerCase());
