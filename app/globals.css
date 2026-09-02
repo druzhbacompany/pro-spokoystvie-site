@@ -620,3 +620,16 @@ textarea.smt-input { padding: 12px 14px; min-height: 96px; }
 .legal-prose strong { color: var(--smt-dark); font-weight: 600; }
 .legal-prose a { color: var(--smt-blue); }
 .legal-prose a:hover { text-decoration: underline; }
+
+/* ---- Отзывы ПроДокторов (виджет площадки) ----
+   Скрипт ПроДокторов вставляет свою разметку (.pd_*) внутрь нашей карточки.
+   Ниже — только резервные значения на случай, если площадка не отдаёт свой CSS:
+   собственные стили виджета (селекторы по #pd_widget_big) специфичнее и выигрывают. */
+.pd-widget-shell .pd_rate_header { font-size: 16px; font-weight: 600; color: var(--smt-dark); line-height: 1.4; }
+.pd-widget-shell .pd_rate_new,
+.pd-widget-shell .pd_read_all { display: inline-flex; margin-top: 12px; color: var(--smt-blue); font-weight: 600; font-size: 15px; }
+.pd-widget-shell .pd_rate_new:hover,
+.pd-widget-shell .pd_read_all:hover { text-decoration: underline; }
+.pd-widget-shell #pd_widget_big_content { margin-top: 16px; font-size: 15px; line-height: 1.6; color: var(--smt-text); }
+.pd-widget-shell #pd_powered_by { display: block; margin-top: 16px; }
+.pd-widget-shell .pd_logo { height: 22px; width: auto; }

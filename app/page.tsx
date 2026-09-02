@@ -7,6 +7,7 @@ import { Cta } from "@/components/smt/Cta";
 import { DoctorCard } from "@/components/smt/DoctorCard";
 import { ServiceCard } from "@/components/smt/ServiceCard";
 import { BranchesSection } from "@/components/smt/Branches";
+import { ProdoctorovReviews } from "@/components/smt/ProdoctorovReviews";
 import { DOCTORS, SERVICES, SERVICE_CATEGORIES, CLINIC } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -109,6 +110,12 @@ export default function HomePage() {
         {/* [6] Trust / license — промо-блок «Медицинская помощь по лицензии» убран
             с главной (решение собственника, 2026-08-07). Страница /dokumenty/ и ссылки
             на неё в шапке и подвале сохранены. */}
+
+        {/* [6a] Отзывы — виджет ПроДокторов (общий по клинике, ЛПУ 112791).
+            Место выбрано как социальное доказательство: сразу после команды и
+            перед контактом/формой. Скрипт площадки подключается внутри компонента,
+            только на этой странице и только после клика пользователя. */}
+        <ProdoctorovReviews />
 
         {/* [7] Единый контакт для всех филиалов */}
         <section className="smt-section">
