@@ -3,6 +3,7 @@ import { Lora, Onest, Manrope } from "next/font/google";
 import "./globals.css";
 import { CLINIC } from "@/lib/data";
 import { CookieBanner } from "@/components/smt/CookieBanner";
+import { MedflexRoundWidget } from "@/components/smt/MedflexRoundWidget";
 
 const lora = Lora({
   subsets: ["latin", "cyrillic"],
@@ -146,6 +147,8 @@ export default function RootLayout({
         />
         {children}
         <CookieBanner />
+        {/* Сквозная круглая кнопка онлайн-записи МедФлекс — на всех страницах сайта. */}
+        <MedflexRoundWidget />
       </body>
     </html>
   );
